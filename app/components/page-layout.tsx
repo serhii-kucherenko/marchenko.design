@@ -88,7 +88,6 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
                 {subHeading}
               </Stack>
             )}
-
             <Box
               sx={{
                 display: "flex",
@@ -116,7 +115,6 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
                 borderColor: "text.secondary",
               }}
             />
-
             <Footer />
           </Stack>
         </Stack>
