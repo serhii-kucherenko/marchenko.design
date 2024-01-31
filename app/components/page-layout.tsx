@@ -115,6 +115,7 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
                 borderColor: "text.secondary",
               }}
             />
+
             <Footer />
           </Stack>
         </Stack>
