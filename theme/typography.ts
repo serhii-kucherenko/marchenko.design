@@ -38,18 +38,21 @@ export const typography = (theme: Theme) => ({
     fontWeight: 500,
   },
   h3: {
-    fontSize: 32,
-    lineHeight: 1.5,
+    fontFamily: ebGaramond.style.fontFamily,
+    fontSize: 24,
+    lineHeight: 40 / 24,
     fontWeight: 500,
   },
   h4: {
-    fontSize: 24,
-    lineHeight: 1.5,
-    fontWeight: 500,
+    fontFamily: ebGaramond.style.fontFamily,
+    fontSize: 16,
+    lineHeight: 24 / 16,
+    fontWeight: 400,
   },
   h5: {
-    fontSize: 18,
-    lineHeight: 1.5,
+    fontFamily: ebGaramond.style.fontFamily,
+    fontSize: 14,
+    lineHeight: 22 / 14,
     fontWeight: 500,
   },
   h6: {
@@ -80,19 +83,6 @@ export const typography = (theme: Theme) => ({
     fontSize: 14,
     lineHeight: 24 / 14,
     fontWeight: 400,
-  },
-  body3: {
-    fontFamily: ebGaramond.style.fontFamily,
-    fontSize: 12,
-    lineHeight: 1.6,
-    fontWeight: 400,
-  },
-  body4: {
-    fontFamily: ebGaramond.style.fontFamily,
-    fontSize: 10,
-    lineHeight: 1.6,
-    fontWeight: 400,
-    letterSpacing: "0.15px",
   },
   caption: {
     fontSize: 12,

@@ -1,11 +1,4 @@
-import {
-  Box,
-  Link,
-  Stack,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { Box, Link, Stack, Typography, useTheme } from "@mui/material";
 import React from "react";
 
 export const Footer: React.FC = () => {

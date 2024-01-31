@@ -1,9 +1,9 @@
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
-import CVIcon from "../../public/images/cv-icon.svg";
-import CVMobileIcon from "../../public/images/cv-icon-mobile.svg";
+import BackIcon from "../../public/images/back-icon.svg";
+import BackIconMobile from "../../public/images/back-icon-mobile.svg";
 
-export const CVCircle: React.FC = () => {
+export const BackButton: React.FC = () => {
   const theme = useTheme();
   const isSMAndDown = useMediaQuery(theme.breakpoints.down("sm"));
   const size = isSMAndDown ? 160 : 200;
@@ -18,9 +18,8 @@ export const CVCircle: React.FC = () => {
           width: 160,
           height: 160,
         }}
-        className="animate-spin-slow"
       >
-        <CVMobileIcon width="160" height="160" />
+        <BackIconMobile width="160" height="160" />
       </Box>
     );
   }
@@ -34,9 +33,8 @@ export const CVCircle: React.FC = () => {
         width: size,
         height: size,
       }}
-      className="animate-spin-slow"
     >
-      <CVIcon width="200" height="200" />
+      <BackIcon width="200" height="200" />
     </Box>
   );
 };
