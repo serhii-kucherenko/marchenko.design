@@ -98,13 +98,14 @@ export default function Home() {
             </strong>{" "}
           </Typography>
           <Typography variant="body1">
-            So if you're seeking to elevate your project's design, foster
-            teamwork, and navigate processes with an unwavering commitment to
-            excellence,{" "}
+            So if you&apos;re seeking to elevate your project&apos;s design,
+            foster teamwork, and navigate processes with an unwavering
+            commitment to excellence,{" "}
             <Link href="mailto:hi.marchenko@gmail.com">
               <strong>shoot me an email</strong>
             </Link>{" "}
-            I'm happy to discuss how I can contribute to your team's success.
+            I&apos;m happy to discuss how I can contribute to your team&apos;s
+            success.
           </Typography>
         </Stack>
       </Box>

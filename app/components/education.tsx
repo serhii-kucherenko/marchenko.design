@@ -15,7 +15,7 @@ export const Education: React.FC = () => {
           Lviv Polytechnic National University
         </Typography>
         <Typography variant="h4" fontWeight={600} pb={1}>
-          Bachelor's degree in Information services 2012-2016
+          Bachelor&apos;s degree in Information services 2012-2016
         </Typography>
         <Typography variant="h5" color="text.secondary" pb={2}>
           Odessa National Polytechnic University
