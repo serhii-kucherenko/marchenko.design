@@ -1,113 +1,164 @@
-import Image from "next/image";
+"use client";
+
+import {
+  Box,
+  Divider,
+  Link,
+  Stack,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
+
+import { CVCircle } from "./components/cv-circle";
+import { ProfileAvatar } from "./components/profile-avatar";
+import { Footer } from "./components/footer";
 
 export default function Home() {
+  const theme = useTheme();
+  const isSMAndDown = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
+      <Stack sx={{ maxWidth: 872 }}>
+        <Stack sx={{ position: "relative" }}>
+          <CVCircle />
+          <Stack
+            sx={{
+              [theme.breakpoints.up("xs")]: {
+                pt: "112px",
+                px: "32px",
+              },
+              [theme.breakpoints.up("sm")]: {
+                pt: "168px",
+                px: "48px",
+              },
+              [theme.breakpoints.up("md")]: {
+                pt: "88px",
+                px: 0,
+              },
+            }}
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+            <Stack
+              sx={{
+                paddingBottom: isSMAndDown ? 3 : 6,
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+                [theme.breakpoints.up("xs")]: {
+                  px: 3,
+                },
+                [theme.breakpoints.up("md")]: {
+                  px: 6,
+                },
+              }}
+            >
+              <Typography
+                variant="subtitle2"
+                textTransform="uppercase"
+                color="text.secondary"
+              >
+                Lead Product Designer
+              </Typography>
+              <Typography variant="h1">Marchenko Anastasiia</Typography>
+            </Stack>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+            <Box
+              sx={{
+                display: "flex",
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+                [theme.breakpoints.up("xs")]: {
+                  flexDirection: "column",
+                },
+                [theme.breakpoints.up("sm")]: {
+                  flexDirection: "row",
+                  gap: 3,
+                },
+                [theme.breakpoints.up("md")]: {
+                  gap: 6,
+                },
+              }}
+            >
+              <Box
+                sx={{
+                  [theme.breakpoints.up("xs")]: {
+                    width: "100%",
+                  },
+                  [theme.breakpoints.up("sm")]: {
+                    width: "50%",
+                  },
+                }}
+              >
+                <ProfileAvatar />
+              </Box>
+              <Stack
+                sx={{
+                  [theme.breakpoints.up("xs")]: {
+                    width: "100%",
+                  },
+                  [theme.breakpoints.up("sm")]: {
+                    width: "50%",
+                  },
+                }}
+              >
+                <Typography
+                  variant="subtitle1"
+                  sx={{ mt: isSMAndDown ? 4 : 8, mb: 1 }}
+                  textTransform="uppercase"
+                  color="text.secondary"
+                >
+                  About
+                </Typography>
+                <Typography variant="body1" sx={{ mb: 1 }}>
+                  As a <strong>lead designer</strong> with over 8 years of
+                  experience, I specialize in{" "}
+                  <strong>
+                    crafting design solutions in the realms of social
+                    collaboration and healthcare/wellness.
+                  </strong>{" "}
+                </Typography>
+                <Typography variant="body1" sx={{ mb: 1 }}>
+                  Leveraging my background in public relations and strong
+                  problem-solving skills, I bring a user-centric approach to
+                  inform design decisions.
+                </Typography>
+                <Typography variant="body1" sx={{ mb: 1 }}>
+                  My unique{" "}
+                  <strong>
+                    blend of artistic vision and natural leadership
+                  </strong>{" "}
+                  makes me a valuable asset to various teams. I not only craft
+                  compelling experiences but also foster strong collaboration
+                  with cross-functional teams, creating an environment where
+                  diverse perspectives converge into cohesive, impactful
+                  solutions.{" "}
+                  <strong>
+                    I excel in overseeing projects from conception to
+                    completion.
+                  </strong>{" "}
+                </Typography>
+                <Typography variant="body1">
+                  So if you're seeking to elevate your project's design, foster
+                  teamwork, and navigate processes with an unwavering commitment
+                  to excellence,{" "}
+                  <Link href="mailto:hi.marchenko@gmail.com">
+                    <strong>shoot me an email</strong>
+                  </Link>{" "}
+                  I'm happy to discuss how I can contribute to your team's
+                  success.
+                </Typography>
+              </Stack>
+            </Box>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+            <Divider sx={{ mt: 6, mb: 2, borderColor: "text.secondary" }} />
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+            <Footer />
+          </Stack>
+        </Stack>
+      </Stack>
+    </Box>
   );
 }

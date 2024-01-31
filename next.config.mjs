@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+import withSvgr from 'next-plugin-svgr';
+
+const nextConfig = withSvgr({
+  svgrOptions: {
+    titleProp: true,
+    icon: true,
+    svgProps: {
+      height: 'auto',
+    },
+  },
+})
 
 export default nextConfig;

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { CustomThemeProvider } from "@/theme/theme-provider";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { ebGaramond, inter } from "@/theme/typography";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+      </head>
+      <body className={`${inter.variable} ${ebGaramond.variable} font-sans`}>
+        <CustomThemeProvider>{children}</CustomThemeProvider>
+      </body>
     </html>
   );
 }
