@@ -25,8 +25,6 @@ export const CircleButton: React.FC<IProps> = ({
       <Box
         sx={{
           position: "absolute",
-          top: -72,
-          right: -25,
           width: size,
           height: size,
           backgroundImage: `url(${mobileImageUrl}.svg)`,
@@ -36,7 +34,7 @@ export const CircleButton: React.FC<IProps> = ({
           borderRadius: "50%",
 
           "&:hover": {
-            backgroundImage: `url(/images/${mobileImageUrl}-hover.svg)`,
+            backgroundImage: `url(${mobileImageUrl}-hover.svg)`,
           },
 
           ...mobileSX,
@@ -50,8 +48,6 @@ export const CircleButton: React.FC<IProps> = ({
     <Box
       sx={{
         position: "absolute",
-        top: -64,
-        right: 48,
         width: size,
         height: size,
         backgroundImage: `url(${desktopImageUrl}.svg)`,

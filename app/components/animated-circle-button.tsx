@@ -1,4 +1,4 @@
-import { Box, SxProps, useMediaQuery, useTheme } from "@mui/material";
+import { SxProps } from "@mui/material";
 import React from "react";
 import { CircleButton } from "./circle-button";
 

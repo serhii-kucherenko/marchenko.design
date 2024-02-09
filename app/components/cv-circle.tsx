@@ -8,6 +8,14 @@ export const CVCircle: React.FC = () => {
       <AnimatedCircleButton
         mobileImageUrl="/images/cv-icon-mobile"
         desktopImageUrl="/images/cv-icon"
+        desktopSX={{
+          top: -64,
+          right: 48,
+        }}
+        mobileSX={{
+          top: -72,
+          right: -25,
+        }}
       />
     </Link>
   );
