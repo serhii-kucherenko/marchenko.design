@@ -18,7 +18,7 @@ import { Contributions } from "../components/contributions";
 
 export default function Home() {
   const theme = useTheme();
-  const isSMAndDown = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMDAndDown = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <PageLayout
@@ -33,11 +33,14 @@ export default function Home() {
             display: "flex",
             justifyContent: "space-between",
             mt: 1,
-            flexWrap: "wrap",
+            flexWrap: isMDAndDown ? "wrap" : "nowrap",
+            rowGap: 0.5,
           }}
         >
           <Typography
             variant="h4"
+            fontSize="16px"
+            fontWeight="500"
             sx={{
               [theme.breakpoints.up("xs")]: {
                 width: "100%",
@@ -45,7 +48,7 @@ export default function Home() {
               [theme.breakpoints.up("sm")]: {
                 width: "50%",
               },
-              [theme.breakpoints.up("lg")]: {
+              [theme.breakpoints.up("md")]: {
                 width: "auto",
               },
             }}
@@ -53,26 +56,26 @@ export default function Home() {
             Email:{" "}
             <Typography
               variant="h4"
-              color="text.secondary"
               component={Link}
               href="mailto:hi.marchenko@gmail.com"
-              sx={{
-                textDecorationColor: (theme) => theme.palette.text.secondary,
-              }}
+              fontWeight="400"
+              fontSize="16px"
             >
               hi.marchenko@gmail.com
             </Typography>
           </Typography>
           <Typography
             variant="h4"
+            fontSize="16px"
+            fontWeight="500"
             sx={{
               [theme.breakpoints.up("xs")]: {
-                width: "50%",
+                width: "100%",
               },
               [theme.breakpoints.up("sm")]: {
                 width: "50%",
               },
-              [theme.breakpoints.up("lg")]: {
+              [theme.breakpoints.up("md")]: {
                 width: "auto",
               },
             }}
@@ -80,22 +83,22 @@ export default function Home() {
             Dribble:{" "}
             <Typography
               variant="h4"
-              color="text.secondary"
               component={Link}
               href="https://dribbble.com/A_March"
               target="_blank"
-              sx={{
-                textDecorationColor: (theme) => theme.palette.text.secondary,
-              }}
+              fontSize="16px"
+              fontWeight="400"
             >
               A_March
             </Typography>
           </Typography>
           <Typography
             variant="h4"
+            fontSize="16px"
+            fontWeight="500"
             sx={{
               [theme.breakpoints.up("xs")]: {
-                width: "50%",
+                width: "100%",
               },
               [theme.breakpoints.up("sm")]: {
                 width: "50%",
@@ -108,19 +111,19 @@ export default function Home() {
             Figma:{" "}
             <Typography
               variant="h4"
-              color="text.secondary"
               component={Link}
               href="https://www.figma.com/@anamarchenko"
               target="_blank"
-              sx={{
-                textDecorationColor: (theme) => theme.palette.text.secondary,
-              }}
+              fontSize="16px"
+              fontWeight="400"
             >
               @anamarchenko
             </Typography>
           </Typography>
           <Typography
             variant="h4"
+            fontSize="16px"
+            fontWeight="500"
             sx={{
               [theme.breakpoints.up("xs")]: {
                 width: "100%",
@@ -128,7 +131,7 @@ export default function Home() {
               [theme.breakpoints.up("sm")]: {
                 width: "50%",
               },
-              [theme.breakpoints.up("lg")]: {
+              [theme.breakpoints.up("md")]: {
                 width: "auto",
               },
             }}
@@ -136,13 +139,11 @@ export default function Home() {
             Linkedin:{" "}
             <Typography
               variant="h4"
-              color="text.secondary"
               component={Link}
               href="https://www.linkedin.com/in/anastasiia-marchenko/"
               target="_blank"
-              sx={{
-                textDecorationColor: (theme) => theme.palette.text.secondary,
-              }}
+              fontSize="16px"
+              fontWeight="400"
             >
               anastasiia-marchenko
             </Typography>

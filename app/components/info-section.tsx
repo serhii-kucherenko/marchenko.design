@@ -23,7 +23,7 @@ export const InfoSection: React.FC<IExperience> = ({ title, children }) => {
       <Typography
         variant="h3"
         textTransform="uppercase"
-        color="text.secondary"
+        color="primary.contrastText"
         mb={2}
       >
         {title}

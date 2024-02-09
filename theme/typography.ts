@@ -3,7 +3,7 @@ import { EB_Garamond, Inter } from "next/font/google";
 
 export const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
   variable: "--font-inter",
 });
@@ -35,48 +35,48 @@ export const typography = (theme: Theme) => ({
     fontFamily: ebGaramond.style.fontFamily,
     fontSize: 36,
     lineHeight: 1.5,
-    fontWeight: 500,
+    fontWeight: 400,
   },
   h3: {
     fontFamily: ebGaramond.style.fontFamily,
-    fontSize: 24,
-    lineHeight: 40 / 24,
-    fontWeight: 500,
+    fontSize: 22,
+    lineHeight: 40 / 22,
+    fontWeight: 400,
   },
   h4: {
     fontFamily: ebGaramond.style.fontFamily,
-    fontSize: 16,
-    lineHeight: 24 / 16,
+    fontSize: 20,
+    lineHeight: 24 / 20,
     fontWeight: 400,
   },
   h5: {
     fontFamily: ebGaramond.style.fontFamily,
-    fontSize: 14,
-    lineHeight: 22 / 14,
+    fontSize: 18,
+    lineHeight: 22 / 18,
     fontWeight: 500,
   },
   h6: {
     fontSize: 18,
     lineHeight: 1.5,
-    fontWeight: 500,
+    fontWeight: 400,
   },
   subtitle1: {
     fontFamily: ebGaramond.style.fontFamily,
-    fontSize: 18,
-    lineHeight: 24 / 18,
-    fontWeight: 500,
+    fontSize: 22,
+    lineHeight: 24 / 22,
+    fontWeight: 400,
   },
   subtitle2: {
     fontFamily: ebGaramond.style.fontFamily,
     fontSize: 12,
     lineHeight: 24 / 12,
-    fontWeight: 500,
+    fontWeight: 400,
   },
   body1: {
     fontFamily: inter.style.fontFamily,
     fontSize: 16,
     lineHeight: 1.5,
-    fontWeight: 400,
+    fontWeight: 300,
   },
   body2: {
     fontFamily: ebGaramond.style.fontFamily,
@@ -98,7 +98,7 @@ export const typography = (theme: Theme) => ({
   button: {
     fontSize: 14,
     lineHeight: 24 / 14,
-    fontWeight: 500,
+    fontWeight: 400,
     letterSpacing: "0.15px",
   },
 });

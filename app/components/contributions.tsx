@@ -1,7 +1,6 @@
-import { Typography, useTheme } from "@mui/material";
+import { Link, Typography, useTheme } from "@mui/material";
 import React from "react";
 import { InfoSection } from "./info-section";
-import Link from "next/link";
 
 export const Contributions: React.FC = () => {
   const theme = useTheme();
@@ -22,7 +21,7 @@ export const Contributions: React.FC = () => {
             Gathered{" "}
             <Typography
               variant="body1"
-              fontWeight={300}
+              fontWeight={600}
               component={Link}
               href="https://www.windmill.digital/playbooks/the-design-sprint-playbook/"
               target="_blank"
@@ -37,15 +36,15 @@ export const Contributions: React.FC = () => {
           }}
         >
           <Typography variant="body1" fontWeight={300}>
-            Sharing various templates with the Figma{" "}
+            Sharing various templates with the{" "}
             <Typography
               variant="body1"
-              fontWeight={300}
+              fontWeight={600}
               component={Link}
               href="https://www.figma.com/@anamarchenko"
               target="_blank"
             >
-              community
+              Figma community
             </Typography>
           </Typography>
         </li>

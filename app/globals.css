@@ -8,6 +8,7 @@
   --background-end-rgb: 255, 255, 255;
   --color-background: #FAF7F7;
   --color-text: #020405;
+  --color-link-hover: #A72618;
 }
 
 @media (prefers-color-scheme: light) {
@@ -21,6 +22,10 @@
 body {
   color: var(--color-text);
   background: var(--color-background);
+}
+
+a:hover {
+  color: var(--color-link-hover);
 }
 
 @layer utilities {

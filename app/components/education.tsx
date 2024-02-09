@@ -11,22 +11,28 @@ export const Education: React.FC = () => {
         <Typography variant="h4" fontWeight={600} pb={1}>
           Master of Business Administration 2016 - 2017
         </Typography>
-        <Typography variant="h5" color="text.secondary" pb={2}>
+        <Typography variant="h5" color="primary.contrastText" pb={2}>
           Lviv Polytechnic National University
         </Typography>
         <Typography variant="h4" fontWeight={600} pb={1}>
           Bachelor&apos;s degree in Information services 2012-2016
         </Typography>
-        <Typography variant="h5" color="text.secondary" pb={2}>
+        <Typography variant="h5" color="primary.contrastText" pb={2}>
           Odessa National Polytechnic University
         </Typography>
         <Typography variant="h4" fontWeight={600} pb={1}>
           Class of Fine Arts 2001-2007
         </Typography>
-        <Typography variant="h5" color="text.secondary" pb={2}>
+        <Typography variant="h5" color="primary.contrastText" pb={2}>
           School of Arts, Odessa
         </Typography>
-        <Typography variant="h4" fontWeight={600} pb={1}>
+        <Typography
+          variant="h5"
+          fontWeight={600}
+          pb={1}
+          mt={2}
+          lineHeight="36px"
+        >
           Designing for complex UI • Build persuasive products • User research
           (IDF) • Mobile UX Design (IDF) • Mobile UI / UX design • Web
           development • Commercial illustration • Brand identity

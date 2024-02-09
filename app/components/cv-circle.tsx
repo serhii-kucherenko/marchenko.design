@@ -1,42 +1,14 @@
-import { Box, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
-import CVIcon from "../../public/images/cv-icon.svg";
-import CVMobileIcon from "../../public/images/cv-icon-mobile.svg";
+import { AnimatedCircleButton } from "./animated-circle-button";
+import Link from "next/link";
 
 export const CVCircle: React.FC = () => {
-  const theme = useTheme();
-  const isSMAndDown = useMediaQuery(theme.breakpoints.down("sm"));
-  const size = isSMAndDown ? 160 : 200;
-
-  if (isSMAndDown) {
-    return (
-      <Box
-        sx={{
-          position: "absolute",
-          top: -72,
-          right: -25,
-          width: 160,
-          height: 160,
-        }}
-        className="animate-spin-slow"
-      >
-        <CVMobileIcon width="160" height="160" />
-      </Box>
-    );
-  }
-
   return (
-    <Box
-      sx={{
-        position: "absolute",
-        top: -64,
-        right: 48,
-        width: size,
-        height: size,
-      }}
-      className="animate-spin-slow"
-    >
-      <CVIcon width="200" height="200" />
-    </Box>
+    <Link href="/cv">
+      <AnimatedCircleButton
+        mobileImageUrl="/images/cv-icon-mobile"
+        desktopImageUrl="/images/cv-icon"
+      />
+    </Link>
   );
 };

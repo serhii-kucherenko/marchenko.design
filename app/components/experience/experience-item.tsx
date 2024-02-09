@@ -14,10 +14,10 @@ export const ExperienceItem: React.FC<ExperienceProps> = ({
 }) => {
   return (
     <Box>
-      <Typography variant="h4" fontWeight={600} pb={1}>
+      <Typography variant="h4" fontWeight={600} pb={0.25}>
         {title}
       </Typography>
-      <Typography variant="h5" color="text.secondary" pb={2}>
+      <Typography variant="h5" color="primary.contrastText" pb={2}>
         {date}
       </Typography>
       <ul
