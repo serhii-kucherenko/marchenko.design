@@ -54,6 +54,8 @@ export default function Home() {
         </Box>
         <Stack
           sx={{
+            mb: 6,
+
             [theme.breakpoints.up("xs")]: {
               width: "100%",
             },
@@ -64,7 +66,17 @@ export default function Home() {
         >
           <Typography
             variant="subtitle1"
-            sx={{ mt: isSMAndDown ? 4 : 8, mb: 1 }}
+            sx={{
+              mb: 1,
+
+              [theme.breakpoints.up("xs")]: {
+                mt: 3,
+              },
+
+              [theme.breakpoints.up("md")]: {
+                mt: 6,
+              },
+            }}
             textTransform="uppercase"
             color="text.secondary"
           >

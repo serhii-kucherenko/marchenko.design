@@ -43,6 +43,16 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
           display: "flex",
           justifyContent: "center",
           width: 1,
+
+          [theme.breakpoints.up("xs")]: {
+            pb: 5,
+          },
+          [theme.breakpoints.up("sm")]: {
+            pb: 6,
+          },
+          [theme.breakpoints.up("md")]: {
+            pb: 22.5,
+          },
         }}
         className="fadeIn"
       >
@@ -127,7 +137,6 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
 
               <Divider
                 sx={{
-                  mt: isSMAndDown ? 3 : 6,
                   mb: 2,
                   borderColor: "text.secondary",
                 }}

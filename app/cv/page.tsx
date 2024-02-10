@@ -151,14 +151,29 @@ export default function Home() {
         </Box>
       }
     >
-      <Stack>
-        <ExperienceList />
-
-        <Education />
-
+      <Stack
+        sx={{
+          [theme.breakpoints.up("xs")]: {
+            gap: 4,
+            mb: 4,
+          },
+          [theme.breakpoints.up("sm")]: {
+            gap: 8,
+            mb: 8,
+          },
+          [theme.breakpoints.up("md")]: {
+            gap: 9,
+            mb: 12,
+          },
+        }}
+      >
         <Skills />
 
+        <ExperienceList />
+
         <Contributions />
+
+        <Education />
       </Stack>
     </PageLayout>
   );

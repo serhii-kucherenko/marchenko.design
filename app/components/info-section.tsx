@@ -10,16 +10,7 @@ export const InfoSection: React.FC<IExperience> = ({ title, children }) => {
   const theme = useTheme();
 
   return (
-    <Stack
-      sx={{
-        [theme.breakpoints.up("xs")]: {
-          mb: 4,
-        },
-        [theme.breakpoints.up("sm")]: {
-          mb: 6,
-        },
-      }}
-    >
+    <Stack>
       <Typography
         variant="h3"
         textTransform="uppercase"

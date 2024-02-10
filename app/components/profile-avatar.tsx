@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, useMediaQuery, useTheme } from "@mui/material";
+import Image from "next/image";
 
 export const ProfileAvatar: React.FC = () => {
   const theme = useTheme();
@@ -14,20 +15,15 @@ export const ProfileAvatar: React.FC = () => {
         justifyContent: "center",
       }}
     >
-      <img
+      <Image
         src="/images/avatar.png"
         alt="avatar"
+        width={424}
+        height={512}
         style={{ width: "100%", objectFit: "contain", objectPosition: "top" }}
       />
     </Box>
   ) : (
-    <img
-      src="/images/avatar.png"
-      alt="avatar"
-      style={{
-        width: 424,
-        height: 512,
-      }}
-    />
+    <Image src="/images/avatar.png" alt="avatar" width={424} height={512} />
   );
 };

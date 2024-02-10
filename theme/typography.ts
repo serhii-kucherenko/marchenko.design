@@ -68,8 +68,8 @@ export const typography = (theme: Theme) => ({
   },
   subtitle2: {
     fontFamily: ebGaramond.style.fontFamily,
-    fontSize: 12,
-    lineHeight: 24 / 12,
+    fontSize: 13,
+    lineHeight: 24 / 13,
     fontWeight: 400,
   },
   body1: {

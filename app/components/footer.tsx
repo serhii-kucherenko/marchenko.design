@@ -8,26 +8,31 @@ export const Footer: React.FC = () => {
     <footer>
       <Stack
         sx={{
-          [theme.breakpoints.up("md")]: {
+          [theme.breakpoints.up("sm")]: {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
             alignItems: "flex-end",
             px: 3,
           },
+
+          [theme.breakpoints.up("md")]: {
+            px: 6,
+          },
         }}
       >
         <Stack
           sx={{
-            [theme.breakpoints.down("sm")]: {
-              mb: 3,
+            mb: 3,
+            [theme.breakpoints.up("sm")]: {
+              mb: 0,
             },
           }}
         >
           <Typography
             variant="body2"
             textTransform="uppercase"
-            color="text.secondary"
+            color="primary.contrastText"
             sx={{
               mb: 1,
             }}
@@ -42,7 +47,7 @@ export const Footer: React.FC = () => {
             <Typography
               variant="body2"
               textTransform="uppercase"
-              color="text.secondary"
+              color="primary.contrastText"
               component={Link}
               href="https://www.linkedin.com/in/anastasiia-marchenko/"
               target="_blank"
@@ -55,7 +60,7 @@ export const Footer: React.FC = () => {
             <Typography
               variant="body2"
               textTransform="uppercase"
-              color="text.secondary"
+              color="primary.contrastText"
               sx={{
                 px: 1,
               }}
@@ -65,7 +70,7 @@ export const Footer: React.FC = () => {
             <Typography
               variant="body2"
               textTransform="uppercase"
-              color="text.secondary"
+              color="primary.contrastText"
               component={Link}
               href="https://www.figma.com/@anamarchenko"
               target="_blank"
@@ -78,7 +83,7 @@ export const Footer: React.FC = () => {
             <Typography
               variant="body2"
               textTransform="uppercase"
-              color="text.secondary"
+              color="primary.contrastText"
               sx={{
                 px: 1,
               }}
@@ -88,7 +93,7 @@ export const Footer: React.FC = () => {
             <Typography
               variant="body2"
               textTransform="uppercase"
-              color="text.secondary"
+              color="primary.contrastText"
               component={Link}
               href="https://dribbble.com/A_March"
               target="_blank"
@@ -103,9 +108,11 @@ export const Footer: React.FC = () => {
         <Typography
           variant="body2"
           textTransform="uppercase"
-          color="text.secondary"
+          color="primary.contrastText"
           sx={{
-            mb: 1,
+            [theme.breakpoints.down("xs")]: {
+              mb: 1,
+            },
           }}
         >
           {new Date().getFullYear()} @ ALL RIGHTS RESERVED

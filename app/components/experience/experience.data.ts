@@ -8,7 +8,7 @@ export const experience = [
     ],
   },
   {
-    title: "Senior Product Designer at Windmill/WEF",
+    title: "Senior Product Designer at Windmill",
     date: "April 2019 - December 2021",
     bulletPoints: [
       "Facilitated design sprints and designed a playbook tool for creating plastic policies, currently assisting 13 countries across the globe.",
