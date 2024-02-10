@@ -1,12 +1,12 @@
 import { SxProps } from "@mui/material";
-import React from "react";
+import React, { ReactNode } from "react";
 import { CircleButton } from "./circle-button";
 
 interface IProps {
   mobileSX?: SxProps;
   desktopSX?: SxProps;
-  mobileImageUrl: string;
-  desktopImageUrl: string;
+  mobileImage: (props: { width: number; height: number }) => ReactNode;
+  desktopImage: (props: { width: number; height: number }) => ReactNode;
 }
 
 export const AnimatedCircleButton: React.FC<IProps> = (props) => {

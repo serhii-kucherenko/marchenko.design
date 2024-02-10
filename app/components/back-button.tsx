@@ -1,11 +1,13 @@
 import React from "react";
 import { CircleButton } from "./circle-button";
+import BackIcon from "../../public/images/back-icon.svg";
+import BackIconMobile from "../../public/images/back-icon-mobile.svg";
 
 export const BackButton: React.FC = () => {
   return (
     <CircleButton
-      mobileImageUrl="/images/back-icon-mobile"
-      desktopImageUrl="/images/back-icon"
+      mobileImage={BackIconMobile}
+      desktopImage={BackIcon}
       mobileSX={{
         zIndex: 99,
         top: -72,

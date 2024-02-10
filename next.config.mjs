@@ -8,6 +8,18 @@ const nextConfig = withSvgr({
     svgProps: {
       height: 'auto',
     },
+    svgo: true,
+    svgoConfig: {
+      plugins: [
+        {
+          name: "prefixIds",
+          params: {
+            prefixIds: false,
+            prefixClassNames: false
+          }
+        },
+      ]
+    }
   },
 })
 
