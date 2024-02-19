@@ -23,7 +23,7 @@ export const InfoSection: React.FC<IExperience> = ({ title, children }) => {
       <Stack
         sx={{
           [theme.breakpoints.up("xs")]: {
-            rowGap: 3,
+            rowGap: 4,
           },
           [theme.breakpoints.up("sm")]: {
             pl: 3,
