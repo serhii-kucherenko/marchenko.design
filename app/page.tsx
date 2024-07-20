@@ -83,7 +83,7 @@ export default function Home() {
             About
           </Typography>
           <Typography variant="body1" sx={{ mb: 1 }}>
-            As a <strong>lead designer</strong> with over 8 years of experience,
+            As a <strong>lead designer</strong> with over 9 years of experience,
             I specialize in{" "}
             <strong>
               crafting design solutions in the realms of social collaboration
