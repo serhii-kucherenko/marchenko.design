@@ -17,7 +17,6 @@ import { ComingSoonCircle } from "./components/coming-soon-circle";
 
 export default function Home() {
   const theme = useTheme();
-  const isSMAndDown = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <PageLayout

@@ -56,7 +56,13 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
         }}
         className="fadeIn"
       >
-        <Stack sx={{ maxWidth: 872, width: 1, overflowX: "hidden" }}>
+        <Stack
+          sx={{
+            maxWidth: 872,
+            width: 1,
+            overflowX: isSMAndDown ? "hidden" : "visible",
+          }}
+        >
           <Stack sx={{ position: "relative" }}>
             {floatButton}
             <Stack
