@@ -15,6 +15,7 @@ import { ExperienceList } from "../components/experience/experience-list";
 import { Education } from "../components/education";
 import { Skills } from "../components/skills";
 import { Contributions } from "../components/contributions";
+import { DownloadButton } from "@/app/components/download-button";
 
 export default function Home() {
   const theme = useTheme();
@@ -166,7 +167,10 @@ export default function Home() {
             mb: 12,
           },
         }}
+        className="relative"
       >
+        <DownloadButton />
+
         <Skills />
 
         <ExperienceList />

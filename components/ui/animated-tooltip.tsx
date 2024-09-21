@@ -8,6 +8,7 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 export const AnimatedTooltip = ({
   items,
@@ -15,8 +16,10 @@ export const AnimatedTooltip = ({
   items: {
     id: number;
     name: string;
-    designation: string;
+    designation?: string;
     image: string;
+    imageClassName?: string;
+    onClick?: () => void;
   }[];
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -41,7 +44,7 @@ export const AnimatedTooltip = ({
     <>
       {items.map((item, idx) => (
         <div
-          className="-mr-4  relative group"
+          className="-mr-4 relative group"
           key={item.name}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -66,14 +69,16 @@ export const AnimatedTooltip = ({
                   rotate: rotate,
                   whiteSpace: "nowrap",
                 }}
-                className="absolute -top-16 -left-1/2 translate-x-1/2 flex text-xs  flex-col items-center justify-center rounded-md bg-black z-50 shadow-xl px-4 py-2"
+                className="absolute -top-20 -left-12 translate-x-1/2 flex text-xs flex-col items-center justify-center rounded-[24px] bg-[rgba(2,4,5,0.7)] z-50 shadow-xl p-[24px]"
               >
-                <div className="absolute inset-x-10 z-30 w-[20%] -bottom-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-px " />
-                <div className="absolute left-10 w-[40%] z-30 -bottom-px bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px " />
+                <div className="absolute inset-x-10 z-30 w-[20%] -bottom-px from-transparent via-emerald-500 to-transparent h-px " />
+                <div className="absolute left-10 w-[40%] z-30 -bottom-px from-transparent via-sky-500 to-transparent h-px " />
                 <div className="font-bold text-white relative z-30 text-base">
                   {item.name}
                 </div>
-                <div className="text-white text-xs">{item.designation}</div>
+                {item.designation && (
+                  <div className="text-white text-xs">{item.designation}</div>
+                )}
               </motion.div>
             )}
           </AnimatePresence>
@@ -83,7 +88,11 @@ export const AnimatedTooltip = ({
             width={100}
             src={item.image}
             alt={item.name}
-            className="object-cover !m-0 !p-0 object-top rounded-full h-14 w-14 border-2 group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500"
+            className={cn(
+              "object-cover !m-0 !p-0 object-top rounded-full h-14 w-14 border-2 group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500",
+              item.imageClassName,
+            )}
+            onClick={item.onClick}
           />
         </div>
       ))}
