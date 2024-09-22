@@ -1,4 +1,5 @@
 export interface Project {
+  id: string;
   title: string;
   year: string;
   description: string;
@@ -9,6 +10,7 @@ export interface Project {
 
 export const PROJECTS_DATA: Project[] = [
   {
+    id: "1",
     title: "Mobile app for global initiatives",
     year: "2023",
     description:
@@ -17,6 +19,7 @@ export const PROJECTS_DATA: Project[] = [
     image: "/images/projects/project1.svg",
   },
   {
+    id: "2",
     title: "Digital spaces builder for global initiatives",
     year: "2021-2024",
     description:
@@ -25,6 +28,7 @@ export const PROJECTS_DATA: Project[] = [
     image: "/images/projects/project2.svg",
   },
   {
+    id: "3",
     title: "Holistic well-being platform",
     year: "2021",
     description:
@@ -33,6 +37,7 @@ export const PROJECTS_DATA: Project[] = [
     image: "/images/projects/project3.svg",
   },
   {
+    id: "4",
     title: "Creative website",
     year: "2020-2021",
     description:
@@ -41,6 +46,7 @@ export const PROJECTS_DATA: Project[] = [
     image: "/images/projects/project4.svg",
   },
   {
+    id: "5",
     title: "Web Acquisition of drug-related information",
     year: "2021-2023",
     description:
@@ -50,6 +56,7 @@ export const PROJECTS_DATA: Project[] = [
     image: "/images/projects/project5.svg",
   },
   {
+    id: "6",
     title: "Plastic policy creation platform",
     year: "2020",
     description:
@@ -58,6 +65,7 @@ export const PROJECTS_DATA: Project[] = [
     image: "/images/projects/project6.svg",
   },
   {
+    id: "7",
     title: "Medical coding system",
     year: "2018",
     description:
@@ -67,6 +75,7 @@ export const PROJECTS_DATA: Project[] = [
     image: "/images/projects/project7.svg",
   },
   {
+    id: "8",
     title: "Healthcare",
     year: "2017",
     description:
@@ -76,3 +85,7 @@ export const PROJECTS_DATA: Project[] = [
     image: "/images/projects/project8.svg",
   },
 ];
+
+export const getProjectById = (id: string): Project | undefined => {
+  return PROJECTS_DATA.find((project) => project.id === id);
+};

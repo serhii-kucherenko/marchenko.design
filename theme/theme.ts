@@ -9,7 +9,7 @@ const customTheme = createTheme({
     primary: {
       main: "#C42D1C",
       dark: "#A72618",
-      contrastText: "rgba(2, 4, 5, 0.60)",
+      contrastText: "#02040599",
     },
     secondary: {
       main: "#19857b",

@@ -23,6 +23,8 @@ export default function Home() {
 
   return (
     <PageLayout
+      title="Marchenko Anastasiia"
+      upperTitle="Lead Product Designer"
       floatButton={<AboutButton />}
       subHeading={
         <Box

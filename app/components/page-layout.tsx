@@ -21,8 +21,8 @@ interface IProps {
 }
 
 export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
-  title = "Marchenko Anastasiia",
-  upperTitle = "Lead Product Designer",
+  title,
+  upperTitle,
   floatButton,
   floatSideButton,
   subHeading,
