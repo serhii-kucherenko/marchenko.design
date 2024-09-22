@@ -11,11 +11,9 @@ import {
 
 import { PageLayout } from "../components/page-layout";
 import { AboutButton } from "../components/about-button";
-import { ExperienceList } from "../components/experience/experience-list";
-import { Education } from "../components/education";
-import { Skills } from "../components/skills";
-import { Contributions } from "../components/contributions";
-import { DownloadButton } from "@/app/components/download-button";
+
+import { CVCircle } from "@/app/components/cv-circle";
+import { Projects } from "@/app/work/components/Projects";
 
 export default function Home() {
   const theme = useTheme();
@@ -23,7 +21,10 @@ export default function Home() {
 
   return (
     <PageLayout
-      floatButton={<AboutButton />}
+      title="Designing for impact"
+      upperTitle="Selected works"
+      floatSideButton={<AboutButton position="left" breakpointAndDown="md" />}
+      floatButton={<CVCircle />}
       subHeading={
         <Box
           sx={{
@@ -32,6 +33,13 @@ export default function Home() {
             mt: 1,
             flexWrap: isMDAndDown ? "wrap" : "nowrap",
             rowGap: 0.5,
+
+            [theme.breakpoints.up("xs")]: {
+              width: "100%",
+            },
+            [theme.breakpoints.up("md")]: {
+              width: "fit-content",
+            },
           }}
         >
           <Typography
@@ -43,14 +51,15 @@ export default function Home() {
                 width: "100%",
               },
               [theme.breakpoints.up("sm")]: {
-                width: "50%",
+                marginRight: 0,
               },
               [theme.breakpoints.up("md")]: {
+                marginRight: "32px",
                 width: "auto",
               },
             }}
           >
-            Email:{" "}
+            Request access:{" "}
             <Typography
               variant="h4"
               component={Link}
@@ -69,15 +78,12 @@ export default function Home() {
               [theme.breakpoints.up("xs")]: {
                 width: "100%",
               },
-              [theme.breakpoints.up("sm")]: {
-                width: "50%",
-              },
               [theme.breakpoints.up("md")]: {
                 width: "auto",
               },
             }}
           >
-            Dribble:{" "}
+            More on Dribbble:{" "}
             <Typography
               variant="h4"
               component={Link}
@@ -87,62 +93,6 @@ export default function Home() {
               fontWeight="400"
             >
               A_March
-            </Typography>
-          </Typography>
-          <Typography
-            variant="h4"
-            fontSize="16px"
-            fontWeight="500"
-            sx={{
-              [theme.breakpoints.up("xs")]: {
-                width: "100%",
-              },
-              [theme.breakpoints.up("sm")]: {
-                width: "50%",
-              },
-              [theme.breakpoints.up("md")]: {
-                width: "auto",
-              },
-            }}
-          >
-            Figma:{" "}
-            <Typography
-              variant="h4"
-              component={Link}
-              href="https://www.figma.com/@anamarchenko"
-              target="_blank"
-              fontSize="16px"
-              fontWeight="400"
-            >
-              @anamarchenko
-            </Typography>
-          </Typography>
-          <Typography
-            variant="h4"
-            fontSize="16px"
-            fontWeight="500"
-            sx={{
-              [theme.breakpoints.up("xs")]: {
-                width: "100%",
-              },
-              [theme.breakpoints.up("sm")]: {
-                width: "50%",
-              },
-              [theme.breakpoints.up("md")]: {
-                width: "auto",
-              },
-            }}
-          >
-            Linkedin:{" "}
-            <Typography
-              variant="h4"
-              component={Link}
-              href="https://www.linkedin.com/in/anastasiia-marchenko/"
-              target="_blank"
-              fontSize="16px"
-              fontWeight="400"
-            >
-              anastasiia-marchenko
             </Typography>
           </Typography>
         </Box>
@@ -165,15 +115,7 @@ export default function Home() {
         }}
         className="relative"
       >
-        <DownloadButton />
-
-        <Skills />
-
-        <ExperienceList />
-
-        <Contributions />
-
-        <Education />
+        <Projects />
       </Stack>
     </PageLayout>
   );

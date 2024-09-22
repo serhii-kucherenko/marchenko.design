@@ -16,9 +16,13 @@ interface IProps {
   floatButton?: React.ReactNode;
   floatSideButton?: React.ReactNode;
   subHeading?: React.ReactNode;
+  title?: string;
+  upperTitle?: string;
 }
 
 export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
+  title = "Marchenko Anastasiia",
+  upperTitle = "Lead Product Designer",
   floatButton,
   floatSideButton,
   subHeading,
@@ -100,10 +104,10 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
                   color="text.secondary"
                   fontWeight="400"
                 >
-                  Lead Product Designer
+                  {upperTitle}
                 </Typography>
                 <Typography variant="h1" fontWeight="500">
-                  Marchenko Anastasiia
+                  {title}
                 </Typography>
                 {subHeading && (
                   <Stack

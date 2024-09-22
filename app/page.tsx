@@ -13,7 +13,7 @@ import { CVCircle } from "./components/cv-circle";
 import { ProfileAvatar } from "./components/profile-avatar";
 
 import { PageLayout } from "./components/page-layout";
-import { ComingSoonCircle } from "./components/coming-soon-circle";
+import { WorkCircle } from "./components/work-circle";
 
 export default function Home() {
   const theme = useTheme();
@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <PageLayout
       floatButton={<CVCircle />}
-      floatSideButton={<ComingSoonCircle />}
+      floatSideButton={<WorkCircle position="left" />}
     >
       <Box
         sx={{

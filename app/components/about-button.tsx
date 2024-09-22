@@ -1,9 +1,8 @@
 import React from "react";
-import { AnimatedCircleButton } from "./animated-circle-button";
+import AboutIcon from "../../public/images/about-icon.svg";
+import AboutIconMobile from "../../public/images/about-icon-mobile.svg";
 import Link from "next/link";
-import CircleIcon from "../../public/images/cv-icon.svg";
-import CircleIconMobile from "../../public/images/cv-icon-mobile.svg";
-import { useTheme } from "@mui/material";
+import { AnimatedCircleButton } from "@/app/components/animated-circle-button";
 import { getCircleButtonSX } from "@/utils/get-circle-button-sx";
 import { Breakpoint } from "@mui/system/createTheme/createBreakpoints";
 
@@ -12,20 +11,18 @@ interface IProps {
   breakpointAndDown?: Breakpoint;
 }
 
-export const CVCircle: React.FC<IProps> = ({
+export const AboutButton: React.FC<IProps> = ({
   position = "top",
   breakpointAndDown,
 }) => {
   const { mobileSX, desktopSX } = getCircleButtonSX(position);
 
-  const theme = useTheme();
-
   return (
-    <Link href="/cv">
+    <Link href="/">
       <AnimatedCircleButton
-        hoverColor={theme.palette.primary.dark}
-        mobileImage={CircleIconMobile}
-        desktopImage={CircleIcon}
+        hoverColor="#A726181A"
+        mobileImage={AboutIconMobile}
+        desktopImage={AboutIcon}
         mobileSX={mobileSX}
         desktopSX={desktopSX}
         breakpointAndDown={breakpointAndDown}
