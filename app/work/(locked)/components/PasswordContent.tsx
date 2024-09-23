@@ -74,7 +74,9 @@ export function PasswordContent({ password, setPassword }: IProps) {
                 borderRadius: "80px",
                 borderWidth: "2px",
                 borderColor: error ? "#C42D1C" : "#02040599",
-                padding: "20px",
+                padding: "16px 24px",
+                height: "56px",
+                fontWeight: 700,
               }}
               onKeyDown={(e) => {
                 if (e.key === "Enter") {
@@ -96,7 +98,7 @@ export function PasswordContent({ password, setPassword }: IProps) {
             <Box
               onClick={onSubmit}
               component="span"
-              className={`absolute right-3 cursor-pointer transform -translate-y-1/2 top-1/2 transition-colors duration-300 ${
+              className={`absolute right-6 cursor-pointer transform -translate-y-1/2 top-1/2 transition-colors duration-300 ${
                 fullPassword ? "text-red-600" : "text-gray-400"
               }`}
               sx={{
@@ -116,18 +118,35 @@ export function PasswordContent({ password, setPassword }: IProps) {
         </div>
 
         <div className="mt-10 flex space-x-8">
-          <p className="text-sm">
+          <Typography variant="h4" fontSize="16px" fontWeight="500">
             Request access:{" "}
-            <a href="mailto:hi.marchenko@gmail.com" className="text-red-600">
+            <Typography
+              variant="h4"
+              component={Link}
+              href="mailto:hi.marchenko@gmail.com"
+              fontWeight="400"
+              fontSize="16px"
+              color="primary.main"
+              className="underline"
+            >
               hi.marchenko@gmail.com
-            </a>
-          </p>
-          <p className="text-sm">
+            </Typography>
+          </Typography>
+          <Typography variant="h4" fontSize="16px" fontWeight="500">
             More on Dribbble:{" "}
-            <a href="#" className="text-red-600">
-              A March
-            </a>
-          </p>
+            <Typography
+              variant="h4"
+              component={Link}
+              href="https://dribbble.com/A_March"
+              target="_blank"
+              fontSize="16px"
+              fontWeight="400"
+              color="primary.main"
+              className="underline"
+            >
+              A_March
+            </Typography>
+          </Typography>
         </div>
       </div>
     </div>
