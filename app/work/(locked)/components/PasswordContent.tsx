@@ -30,7 +30,7 @@ export function PasswordContent({ password, setPassword }: IProps) {
   };
 
   return (
-    <div className="flex justify-center w-full min-h-screen fadeIn py-[88px]">
+    <div className="flex justify-center w-full min-h-screen animate-fadeIn py-[88px]">
       <div className="flex flex-col items-start w-max-[600px] justify-between">
         <Typography
           variant="subtitle2"

@@ -59,7 +59,7 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
             pb: 11,
           },
         }}
-        className="fadeIn bg-background min-h-screen"
+        className="animate-fadeIn bg-background min-h-screen"
       >
         <Stack
           sx={{
