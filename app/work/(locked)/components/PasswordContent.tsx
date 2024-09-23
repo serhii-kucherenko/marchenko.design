@@ -19,7 +19,11 @@ export function PasswordContent({ password, setPassword }: IProps) {
 
   const onSubmit = () => {
     if (fullPassword) {
-      setPassword(localPassword);
+      if (localPassword === process.env.NEXT_PUBLIC_MARCH) {
+        setPassword(localPassword);
+      } else {
+        setError("Password is incorrect");
+      }
     } else {
       setError("Password must be at least 8 characters");
     }
