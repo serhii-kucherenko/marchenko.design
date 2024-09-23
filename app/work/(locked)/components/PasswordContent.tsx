@@ -40,7 +40,7 @@ export function PasswordContent({ password, setPassword }: IProps) {
           component={Link}
           href="/work"
         >
-          BACK
+          BACK TO WORKS
         </Typography>
 
         <div>

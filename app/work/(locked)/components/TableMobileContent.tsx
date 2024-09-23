@@ -28,7 +28,7 @@ export function TableMobileContent() {
           component={Link}
           href="/work"
         >
-          BACK
+          BACK TO WORKS
         </Typography>
       }
       floatButton={<CVCircle />}

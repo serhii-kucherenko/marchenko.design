@@ -23,7 +23,7 @@ export default function Work() {
           component={Link}
           href="/work"
         >
-          BACK
+          BACK TO WORKS
         </Typography>
       }
       subHeading={
