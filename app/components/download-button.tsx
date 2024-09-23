@@ -22,8 +22,8 @@ export const DownloadButton: React.FC = () => {
 
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/Marchenko_CV.pdf";
-    link.download = "Marchenko_CV.pdf";
+    link.href = "/Marchenko-Anastasiia-CV.pdf";
+    link.download = "Marchenko-Anastasiia-CV.pdf";
     link.click();
   };
 
