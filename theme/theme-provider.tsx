@@ -27,7 +27,7 @@ export const CustomThemeProvider: React.FC<ThemeProviderProps> = ({
         <AnimatedCircleButton
           mobileImage={PageLoaderIcon}
           desktopImage={PageLoaderIcon}
-          className="animate-fadeInd"
+          className="animate-spin-faster"
         />
       </div>
     );

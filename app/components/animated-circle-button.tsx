@@ -19,6 +19,6 @@ export const AnimatedCircleButton: React.FC<IProps> = ({
   ...props
 }) => {
   return (
-    <CircleButton {...props} className={cn("animate-spin-slow", className)} />
+    <CircleButton {...props} className={cn(className, "animate-spin-slow")} />
   );
 };
