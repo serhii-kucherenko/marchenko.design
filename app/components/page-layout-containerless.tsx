@@ -89,7 +89,7 @@ export const PageLayoutContainerless: React.FC<PropsWithChildren<IProps>> = ({
             <Stack
               sx={{
                 paddingBottom: isSMAndDown ? 4 : 6,
-
+                width: 1,
                 maxWidth: 872,
 
                 [theme.breakpoints.up("xs")]: {

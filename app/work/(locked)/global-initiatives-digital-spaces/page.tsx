@@ -7,12 +7,16 @@ import Image from "next/image";
 
 import { WorkSlider } from "@/app/work/(locked)/components/WorkSlider/WorkSlider";
 import { PageLayoutContainerless } from "@/app/components/page-layout-containerless";
+import { AboutButton } from "@/app/components/about-button";
+import { CVCircle } from "@/app/components/cv-circle";
 
 const project = getProjectById("global-initiatives-digital-spaces") as Project;
 
 export default function Work() {
   return (
     <PageLayoutContainerless
+      floatSideButton={<AboutButton position="left" breakpointAndDown="md" />}
+      floatButton={<CVCircle />}
       title={project.title}
       upperTitle={
         <Typography
@@ -46,7 +50,7 @@ export default function Work() {
       }
     >
       <div className="grid gap-y-30 mb-[120px] items-center">
-        <div className="w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-center mb-[48px]">
           <div className="relative w-full h-full aspect-[872/412] overflow-hidden max-w-[872px]">
             <Image
               src={project.heroImage}

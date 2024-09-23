@@ -22,7 +22,7 @@ export const PROJECTS_DATA: Project[] = [
     description:
       "A satellite white-labeling app for Forum Spaces designed for multi-stakeholder communities to scale engagement and multiply impact.",
     locked: true,
-    image: "/images/projects/project1.svg",
+    image: "/images/projects/project1.png",
     heroImage: "/images/projects/project1-hero.png",
     duration: "2021 - 2024",
     role: "Lead Designer",
@@ -36,7 +36,7 @@ export const PROJECTS_DATA: Project[] = [
     description:
       "A platform that helps initiatives connect with a global ecosystem to increase engagement and collective impact on global issues.",
     locked: true,
-    image: "/images/projects/project2.svg",
+    image: "/images/projects/project2.png",
     heroImage: "/images/projects/project2-hero.png",
     duration: "Q2 2023",
     role: "Lead Designer",
