@@ -8,7 +8,7 @@ interface IProps {
   mobileImage: (props: { width: number; height: number }) => ReactNode;
   desktopImage: (props: { width: number; height: number }) => ReactNode;
   className?: string;
-  hoverColor: string;
+  hoverColor?: string;
   breakpointAndDown?: Breakpoint;
 }
 
@@ -31,9 +31,13 @@ export const CircleButton: React.FC<IProps> = ({
     borderRadius: "50%",
     zIndex: 1,
 
-    "&:hover svg, &:hover .colored": {
-      fill: hoverColor,
-    },
+    ...(hoverColor
+      ? {
+          "&:hover svg, &:hover .colored": {
+            fill: hoverColor,
+          },
+        }
+      : {}),
   };
 
   if (isXAndDown) {
