@@ -16,7 +16,7 @@ interface IProps {
   floatButton?: React.ReactNode;
   floatSideButton?: React.ReactNode;
   subHeading?: React.ReactNode;
-  title?: string;
+  title?: string | React.ReactNode;
   upperTitle?: string | React.ReactNode;
 }
 
@@ -47,6 +47,7 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
           display: "flex",
           justifyContent: "center",
           width: 1,
+          height: 1,
 
           [theme.breakpoints.up("xs")]: {
             pb: 5,
@@ -64,6 +65,7 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
           sx={{
             maxWidth: 872,
             width: 1,
+            height: 1,
             overflowX: isSMAndDown ? "hidden" : "visible",
           }}
         >
@@ -110,9 +112,14 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
                 ) : (
                   upperTitle
                 )}
-                <Typography variant="h1" fontWeight="500">
-                  {title}
-                </Typography>
+
+                {typeof upperTitle === "string" ? (
+                  <Typography variant="h1" fontWeight="500">
+                    {title}
+                  </Typography>
+                ) : (
+                  title
+                )}
                 {subHeading && (
                   <Stack
                     sx={{

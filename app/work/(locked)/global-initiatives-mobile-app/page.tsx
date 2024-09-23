@@ -180,13 +180,13 @@ export default function Work() {
 
           <div className="grid gap-y-6 max-w-[872px] w-full">
             <div className="grid gap-y-4 w-full">
-              <div className="relative w-full h-full aspect-[872/347] overflow-hidden">
+              <div className="relative w-full h-full aspect-[872/374] overflow-hidden">
                 <Image
                   src="/images/projects/project1/img1.png"
                   alt="img1"
                   className="absolute inset-0 w-full h-full img"
                   width={872}
-                  height={347}
+                  height={374}
                 />
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function Work() {
               <div className="relative w-full h-full aspect-[872/555] overflow-hidden">
                 <Image
                   src="/images/projects/project1/img2.png"
-                  alt="img1"
+                  alt="img2"
                   className="absolute inset-0 w-full h-full img"
                   width={872}
                   height={555}
@@ -287,7 +287,7 @@ export default function Work() {
                 <div className="relative w-full h-full aspect-[872/480] overflow-hidden">
                   <Image
                     src="/images/projects/project1/img3.png"
-                    alt="img1"
+                    alt="img2"
                     className="absolute inset-0 w-full h-full img"
                     width={872}
                     height={480}
