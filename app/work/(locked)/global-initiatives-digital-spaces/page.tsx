@@ -21,6 +21,7 @@ export default function Work() {
           color="primary.main"
           fontWeight="400"
           component={Link}
+          href="/work"
         >
           BACK
         </Typography>
