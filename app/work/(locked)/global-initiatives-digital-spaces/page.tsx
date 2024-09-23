@@ -342,7 +342,10 @@ export default function Work() {
                       boxShadow: "0 4px 6px #00000026",
                     }}
                   >
-                    <source src="/videos/widgets.mp4" type="video/mp4" />
+                    <source
+                      src="https://github.com/serhii-kucherenko/marchenko.design/raw/refs/heads/main/public/widgets.mp4"
+                      type="video/mp4"
+                    />
                   </video>
                 </div>
               </div>
