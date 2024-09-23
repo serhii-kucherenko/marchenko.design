@@ -1,26 +1,17 @@
 "use client";
-import { useLocalStorage } from "@uidotdev/usehooks";
-import { PasswordContent } from "@/app/work/(locked)/components/PasswordContent";
-import { useMediaQuery } from "@mui/material";
-import { TableMobileContent } from "@/app/work/(locked)/components/TableMobileContent";
+import { useIsClient } from "@uidotdev/usehooks";
+import { ClientLayout } from "@/app/work/(locked)/components/ClientLayout";
 
 interface IProps {
   children: React.ReactNode;
 }
 
 export default function WorkLayout({ children }: IProps) {
-  const [password, setPassword] = useLocalStorage("password", "");
-  const haveAccess = process.env.NEXT_PUBLIC_MARCH === password;
-  // 872px and down
-  const isTabledOrMobile = useMediaQuery("(max-width: 872px)");
+  const isClient = useIsClient();
 
-  if (!haveAccess) {
-    return <PasswordContent password={password} setPassword={setPassword} />;
+  if (!isClient) {
+    return null;
   }
 
-  if (isTabledOrMobile) {
-    return <TableMobileContent />;
-  }
-
-  return children;
+  return <ClientLayout>{children}</ClientLayout>;
 }

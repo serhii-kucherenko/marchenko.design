@@ -183,7 +183,7 @@ export default function Work() {
           <div className="grid gap-y-4 w-full max-w-[872px]">
             <div className="relative w-full h-full aspect-[872/464] overflow-hidden">
               <Image
-                src="/images/projects/project1/img1.png"
+                src="/images/projects/project2/img1.png"
                 alt="img1"
                 className="absolute inset-0 w-full h-full img"
                 width={872}
@@ -199,7 +199,7 @@ export default function Work() {
           <div className="grid gap-y-4 w-full max-w-[872px]">
             <div className="relative w-full h-full aspect-[872/412] overflow-hidden">
               <Image
-                src="/images/projects/project1/img2.png"
+                src="/images/projects/project2/img2.png"
                 alt="img1"
                 className="absolute inset-0 w-full h-full img"
                 width={872}
@@ -303,7 +303,7 @@ export default function Work() {
             <div className="grid gap-y-6 max-w-[872px]">
               <div className="relative w-full h-full aspect-[872/412] overflow-hidden">
                 <Image
-                  src="/images/projects/project1/grid-img1.png"
+                  src="/images/projects/project2/grid-img1.png"
                   alt="img1"
                   className="absolute inset-0 w-full h-full img"
                   width={872}
@@ -313,7 +313,7 @@ export default function Work() {
 
               <div className="relative w-full h-full aspect-[872/412] overflow-hidden">
                 <Image
-                  src="/images/projects/project1/grid-img2.png"
+                  src="/images/projects/project2/grid-img2.png"
                   alt="img1"
                   className="absolute inset-0 w-full h-full img"
                   width={872}
@@ -324,7 +324,7 @@ export default function Work() {
               <div className="grid gap-y-4">
                 <div className="relative w-full h-full aspect-[872/480] overflow-hidden">
                   <Image
-                    src="/images/projects/project1/grid-img3.png"
+                    src="/images/projects/project2/grid-img3.png"
                     alt="img1"
                     className="absolute inset-0 w-full h-full img"
                     width={872}
