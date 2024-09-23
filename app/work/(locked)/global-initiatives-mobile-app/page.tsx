@@ -1,6 +1,5 @@
 "use client";
 
-import { CVCircle } from "@/app/components/cv-circle";
 import { Box, Link, Typography } from "@mui/material";
 import React from "react";
 import { getProjectById, Project } from "@/app/types/project";
@@ -16,18 +15,17 @@ export default function Work() {
   return (
     <PageLayoutContainerless
       title={project.title}
-      floatButton={<CVCircle />}
       upperTitle={
-        <Link href="/work" className="!no-underline">
-          <Typography
-            variant="subtitle2"
-            textTransform="uppercase"
-            color="primary.main"
-            fontWeight="400"
-          >
-            BACK
-          </Typography>
-        </Link>
+        <Typography
+          variant="subtitle2"
+          textTransform="uppercase"
+          color="primary.main"
+          fontWeight="400"
+          component={Link}
+          href="/work"
+        >
+          BACK
+        </Typography>
       }
       subHeading={
         <Box
@@ -49,8 +47,8 @@ export default function Work() {
       }
     >
       <div className="grid gap-y-30 mb-[120px] items-center">
-        <div className="w-full gap-y-[72px] mb-[120px] flex flex-col items-center">
-          <div className="relative w-full h-full aspect-[872/412] overflow-hidden max-w-[872px]">
+        <div className="w-full flex flex-col items-center">
+          <div className="relative w-full h-full mb-[48px] aspect-[872/412] overflow-hidden max-w-[872px]">
             <Image
               src={project.heroImage}
               alt={project.title}
@@ -59,7 +57,9 @@ export default function Work() {
               height={412}
             />
           </div>
+        </div>
 
+        <div className="w-full gap-y-[72px] mb-[120px] flex flex-col items-center">
           {/*  GOAL */}
           <div className="grid gap-y-6 max-w-[872px]">
             <Typography
@@ -202,7 +202,7 @@ export default function Work() {
                 />
               </div>
 
-              <Typography variant="caption">
+              <Typography variant="caption" className="pl-12">
                 *Main personas & Mobile VPC
               </Typography>
             </div>
@@ -280,37 +280,41 @@ export default function Work() {
                 </li>
               </ul>
             </div>
+          </div>
 
-            {/*  GRID */}
-            <div className="grid gap-y-6 max-w-[872px]">
-              <div className="grid gap-y-4 w-full ">
-                <div className="relative w-full h-full aspect-[872/480] overflow-hidden">
-                  <Image
-                    src="/images/projects/project1/img3.png"
-                    alt="img2"
-                    className="absolute inset-0 w-full h-full img"
-                    width={872}
-                    height={480}
-                  />
-                </div>
-
-                <Typography variant="caption">*Design vision</Typography>
+          {/*  GRID */}
+          <div className="grid gap-y-6 w-full max-w-[872px]">
+            <div className="grid gap-y-4 w-full ">
+              <div className="relative w-full h-full aspect-[872/480] overflow-hidden">
+                <Image
+                  src="/images/projects/project1/img3.png"
+                  alt="img2"
+                  className="absolute inset-0 w-full h-full img"
+                  width={872}
+                  height={480}
+                />
               </div>
 
-              <div className="grid gap-y-4 w-full ">
-                <div className="w-full h-[895px] px-1 flex items-center justify-center">
-                  <Compare
-                    firstImage="/images/projects/project1/img4-light.png"
-                    secondImage="/images/projects/project1/img4-dark.png"
-                    firstImageClassName="object-cover object-left-top w-full"
-                    secondImageClassname="object-cover object-left-top w-full"
-                    className="w-full h-full"
-                    slideMode="hover"
-                    autoplay={true}
-                  />
-                </div>
-                <Typography variant="caption">*MVP solution</Typography>
+              <Typography variant="caption" className="pl-12">
+                *Design vision
+              </Typography>
+            </div>
+
+            <div className="grid gap-y-4 w-full ">
+              <div className="w-full h-[895px] px-1 flex items-center justify-center">
+                <Compare
+                  firstImage="/images/projects/project1/img4-light.png"
+                  secondImage="/images/projects/project1/img4-dark.png"
+                  firstImageClassName="object-cover object-left-top w-full"
+                  secondImageClassname="object-cover object-left-top w-full"
+                  className="w-full h-full"
+                  slideMode="hover"
+                  autoplay={true}
+                />
               </div>
+              <Typography variant="caption" className="pl-12">
+                *MVP solution
+              </Typography>
             </div>
           </div>
 

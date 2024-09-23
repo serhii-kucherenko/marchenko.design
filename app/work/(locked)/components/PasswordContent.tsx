@@ -32,16 +32,16 @@ export function PasswordContent({ password, setPassword }: IProps) {
   return (
     <div className="flex justify-center w-full min-h-screen fadeIn py-[88px]">
       <div className="flex flex-col items-start w-max-[600px] justify-between">
-        <Link href="/work">
-          <Typography
-            variant="subtitle2"
-            textTransform="uppercase"
-            color="primary.main"
-            fontWeight="400"
-          >
-            BACK
-          </Typography>
-        </Link>
+        <Typography
+          variant="subtitle2"
+          textTransform="uppercase"
+          color="primary.main"
+          fontWeight="400"
+          component={Link}
+          href="/work"
+        >
+          BACK
+        </Typography>
 
         <div>
           <Typography

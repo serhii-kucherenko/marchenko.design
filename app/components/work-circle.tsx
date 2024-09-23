@@ -7,9 +7,13 @@ import { getCircleButtonSX } from "@/utils/get-circle-button-sx";
 
 interface IProps {
   position?: "top" | "left";
+  breakpointAndDown?: "sm" | "md";
 }
 
-export const WorkCircle: React.FC<IProps> = ({ position = "top" }) => {
+export const WorkCircle: React.FC<IProps> = ({
+  position = "top",
+  breakpointAndDown = "md",
+}) => {
   const { mobileSX, desktopSX } = getCircleButtonSX(position);
 
   return (
@@ -20,7 +24,7 @@ export const WorkCircle: React.FC<IProps> = ({ position = "top" }) => {
         mobileImage={WorkIconMobile}
         mobileSX={mobileSX}
         desktopSX={desktopSX}
-        breakpointAndDown="md"
+        breakpointAndDown={breakpointAndDown}
       />
     </Link>
   );

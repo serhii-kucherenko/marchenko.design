@@ -20,16 +20,16 @@ export function TableMobileContent() {
         </div>
       }
       upperTitle={
-        <Link href="/work" className="!no-underline">
-          <Typography
-            variant="subtitle2"
-            textTransform="uppercase"
-            color="primary.main"
-            fontWeight="400"
-          >
-            BACK
-          </Typography>
-        </Link>
+        <Typography
+          variant="subtitle2"
+          textTransform="uppercase"
+          color="primary.main"
+          fontWeight="400"
+          component={Link}
+          href="/work"
+        >
+          BACK
+        </Typography>
       }
       floatButton={<CVCircle />}
     >

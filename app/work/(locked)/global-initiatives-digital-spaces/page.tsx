@@ -1,6 +1,5 @@
 "use client";
 
-import { CVCircle } from "@/app/components/cv-circle";
 import { Box, Link, Typography } from "@mui/material";
 import React from "react";
 import { getProjectById, Project } from "@/app/types/project";
@@ -15,18 +14,16 @@ export default function Work() {
   return (
     <PageLayoutContainerless
       title={project.title}
-      floatButton={<CVCircle />}
       upperTitle={
-        <Link href="/work" className="!no-underline">
-          <Typography
-            variant="subtitle2"
-            textTransform="uppercase"
-            color="primary.main"
-            fontWeight="400"
-          >
-            BACK
-          </Typography>
-        </Link>
+        <Typography
+          variant="subtitle2"
+          textTransform="uppercase"
+          color="primary.main"
+          fontWeight="400"
+          component={Link}
+        >
+          BACK
+        </Typography>
       }
       subHeading={
         <Box
@@ -48,7 +45,7 @@ export default function Work() {
       }
     >
       <div className="grid gap-y-30 mb-[120px] items-center">
-        <div className="w-full gap-y-[72px] mb-[120px] flex flex-col items-center">
+        <div className="w-full flex flex-col items-center">
           <div className="relative w-full h-full aspect-[872/412] overflow-hidden max-w-[872px]">
             <Image
               src={project.heroImage}
@@ -58,7 +55,9 @@ export default function Work() {
               height={412}
             />
           </div>
+        </div>
 
+        <div className="w-full gap-y-[72px] mb-[120px] flex flex-col items-center">
           {/*  GOAL */}
           <div className="grid gap-y-6 max-w-[872px]">
             <Typography
@@ -207,7 +206,7 @@ export default function Work() {
               />
             </div>
 
-            <Typography variant="caption">
+            <Typography variant="caption" className="pl-12">
               *Main personas & Prioritization matrix
             </Typography>
           </div>
@@ -298,59 +297,59 @@ export default function Work() {
                 </li>
               </ul>
             </div>
+          </div>
 
-            {/*  GRID */}
-            <div className="grid gap-y-6 max-w-[872px]">
-              <div className="relative w-full h-full aspect-[872/412] overflow-hidden">
+          {/*  GRID */}
+          <div className="grid gap-y-6 w-full max-w-[872px]">
+            <div className="relative w-full h-full aspect-[872/412] overflow-hidden">
+              <Image
+                src="/images/projects/project2/grid-img1.png"
+                alt="img1"
+                className="absolute inset-0 w-full h-full img"
+                width={872}
+                height={412}
+              />
+            </div>
+
+            <div className="relative w-full h-full aspect-[872/412] overflow-hidden">
+              <Image
+                src="/images/projects/project2/grid-img2.png"
+                alt="img1"
+                className="absolute inset-0 w-full h-full img"
+                width={872}
+                height={412}
+              />
+            </div>
+
+            <div className="grid gap-y-4">
+              <div className="relative w-full h-full aspect-[872/480] overflow-hidden">
                 <Image
-                  src="/images/projects/project2/grid-img1.png"
+                  src="/images/projects/project2/grid-img3.png"
                   alt="img1"
                   className="absolute inset-0 w-full h-full img"
                   width={872}
-                  height={412}
+                  height={480}
                 />
-              </div>
 
-              <div className="relative w-full h-full aspect-[872/412] overflow-hidden">
-                <Image
-                  src="/images/projects/project2/grid-img2.png"
-                  alt="img1"
-                  className="absolute inset-0 w-full h-full img"
-                  width={872}
-                  height={412}
-                />
-              </div>
-
-              <div className="grid gap-y-4">
-                <div className="relative w-full h-full aspect-[872/480] overflow-hidden">
-                  <Image
-                    src="/images/projects/project2/grid-img3.png"
-                    alt="img1"
-                    className="absolute inset-0 w-full h-full img"
-                    width={872}
-                    height={480}
-                  />
-
-                  <div className="flex items-center justify-center w-full h-full z-50">
-                    <video
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-auto h-[402px] z-50"
-                      style={{
-                        boxShadow: "0 4px 6px #00000026",
-                      }}
-                    >
-                      <source src="/videos/widgets.mp4" type="video/mp4" />
-                    </video>
-                  </div>
+                <div className="flex items-center justify-center w-full h-full z-50">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-auto h-[402px] z-50"
+                    style={{
+                      boxShadow: "0 4px 6px #00000026",
+                    }}
+                  >
+                    <source src="/videos/widgets.mp4" type="video/mp4" />
+                  </video>
                 </div>
-
-                <Typography variant="caption" className="pl-12">
-                  *Editor
-                </Typography>
               </div>
+
+              <Typography variant="caption" className="pl-12">
+                *Editor
+              </Typography>
             </div>
           </div>
 

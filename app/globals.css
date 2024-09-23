@@ -64,4 +64,15 @@
     @apply text-foreground;
     background: #FAF7F7!important;
   }
+
+
+}
+
+a.MuiTypography-root {
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a.MuiTypography-root:hover {
+  color: #A72618;
 }

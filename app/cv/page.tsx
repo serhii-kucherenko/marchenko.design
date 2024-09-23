@@ -16,6 +16,7 @@ import { Education } from "../components/education";
 import { Skills } from "../components/skills";
 import { Contributions } from "../components/contributions";
 import { DownloadButton } from "@/app/components/download-button";
+import { WorkCircle } from "@/app/components/work-circle";
 
 export default function Home() {
   const theme = useTheme();
@@ -26,6 +27,7 @@ export default function Home() {
       title="Marchenko Anastasiia"
       upperTitle="Lead Product Designer"
       floatButton={<AboutButton />}
+      floatSideButton={!isMDAndDown && <WorkCircle position="left" />}
       subHeading={
         <Box
           sx={{
