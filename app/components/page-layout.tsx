@@ -56,7 +56,7 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
             pb: 6,
           },
           [theme.breakpoints.up("md")]: {
-            pb: 22.5,
+            pb: 11,
           },
         }}
         className="fadeIn bg-background min-h-screen"
