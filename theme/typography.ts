@@ -87,7 +87,7 @@ export const typography = (theme: Theme) => ({
   caption: {
     fontSize: 12,
     lineHeight: 1.6,
-    fontWeight: 400,
+    fontWeight: 300,
     letterSpacing: "0.15px",
   },
   overline: {

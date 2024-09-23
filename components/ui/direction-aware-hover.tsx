@@ -104,17 +104,6 @@ export const DirectionAwareHover = ({
                 </div>
               )}
             </div>
-
-            {/*<Image*/}
-            {/*  alt="image"*/}
-            {/*  className={cn(*/}
-            {/*    "h-full w-full object-cover scale-[1.15]",*/}
-            {/*    imageClassName,*/}
-            {/*  )}*/}
-            {/*  width="1000"*/}
-            {/*  height="1000"*/}
-            {/*  src={imageUrl}*/}
-            {/*/>*/}
           </motion.div>
           <motion.div
             variants={textVariants}

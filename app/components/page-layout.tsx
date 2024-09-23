@@ -17,7 +17,7 @@ interface IProps {
   floatSideButton?: React.ReactNode;
   subHeading?: React.ReactNode;
   title?: string;
-  upperTitle?: string;
+  upperTitle?: string | React.ReactNode;
 }
 
 export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
@@ -58,7 +58,7 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
             pb: 22.5,
           },
         }}
-        className="fadeIn"
+        className="fadeIn bg-background min-h-screen"
       >
         <Stack
           sx={{
@@ -98,14 +98,18 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
                   },
                 }}
               >
-                <Typography
-                  variant="subtitle2"
-                  textTransform="uppercase"
-                  color="text.secondary"
-                  fontWeight="400"
-                >
-                  {upperTitle}
-                </Typography>
+                {typeof upperTitle === "string" ? (
+                  <Typography
+                    variant="subtitle2"
+                    textTransform="uppercase"
+                    color="text.secondary"
+                    fontWeight="400"
+                  >
+                    {upperTitle}
+                  </Typography>
+                ) : (
+                  upperTitle
+                )}
                 <Typography variant="h1" fontWeight="500">
                   {title}
                 </Typography>

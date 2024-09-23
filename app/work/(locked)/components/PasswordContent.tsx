@@ -3,15 +3,27 @@ import React, { useState } from "react";
 
 import ArrowRightIcon from "../../../../public/images/arrow-right-icon.svg";
 
-import { useLocalStorage } from "@uidotdev/usehooks";
 import { Box, Typography } from "@mui/material";
 import Link from "next/link";
 
-export function PasswordContent() {
-  const [password, setPassword] = useState("");
-  const [, setPasswordToLocalStorage] = useLocalStorage("password", "");
+interface IProps {
+  password: string;
+  setPassword: (password: string) => void;
+}
 
-  const isPasswordValid = password.length >= 8;
+export function PasswordContent({ password, setPassword }: IProps) {
+  const [localPassword, setLocalPassword] = useState(password);
+  const [error, setError] = useState<string>();
+
+  const fullPassword = localPassword.length >= 8;
+
+  const onSubmit = () => {
+    if (fullPassword) {
+      setPassword(localPassword);
+    } else {
+      setError("Password must be at least 8 characters");
+    }
+  };
 
   return (
     <div className="flex justify-center w-full min-h-screen fadeIn py-[88px]">
@@ -44,34 +56,53 @@ export function PasswordContent() {
           <div className="mt-6 relative flex items-center w-full max-w-md">
             <input
               type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full text-lg focus:outline-none"
-              placeholder="Enter password"
+              value={localPassword}
+              onChange={(e) => {
+                setLocalPassword(e.target.value);
+
+                if (!fullPassword && error) {
+                  setError(undefined);
+                  return;
+                }
+              }}
+              className="w-full text-lg focus:outline-none bg-background"
               style={{
                 borderRadius: "80px",
                 borderWidth: "2px",
-                borderColor: "#02040599",
+                borderColor: error ? "#C42D1C" : "#02040599",
                 padding: "20px",
               }}
-            />
-
-            <Box
-              onClick={() => {
-                if (isPasswordValid) {
-                  alert("Password is valid");
-                } else {
-                  setPasswordToLocalStorage(password);
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  onSubmit();
                 }
               }}
+            />
+            {error && (
+              <Typography
+                variant="subtitle2"
+                fontWeight="400"
+                className="absolute left-3 transform translate-y-[36px] top-1/2 "
+                sx={{ color: "#C42D1C" }}
+              >
+                {error}
+              </Typography>
+            )}
+
+            <Box
+              onClick={onSubmit}
               component="span"
-              className={`absolute right-3 transform -translate-y-1/2 top-1/2 transition-colors duration-300 ${
-                isPasswordValid ? "text-red-600" : "text-gray-400"
+              className={`absolute right-3 cursor-pointer transform -translate-y-1/2 top-1/2 transition-colors duration-300 ${
+                fullPassword ? "text-red-600" : "text-gray-400"
               }`}
               sx={{
                 "& .colored": {
                   transition: "fill 300ms",
-                  fill: isPasswordValid ? "#C42D1C" : "#02040599",
+                  fill: fullPassword ? "#C42D1C" : "#02040599",
+                },
+
+                "&:hover .colored": {
+                  fill: fullPassword ? "#A72618" : "#02040599",
                 },
               }}
             >

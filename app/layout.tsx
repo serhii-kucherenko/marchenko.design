@@ -55,6 +55,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
       </head>
       <body className={`${inter.variable} ${ebGaramond.variable} font-sans`}>
         <CustomThemeProvider>{children}</CustomThemeProvider>
