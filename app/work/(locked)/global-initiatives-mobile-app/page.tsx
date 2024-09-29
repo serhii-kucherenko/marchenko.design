@@ -120,7 +120,7 @@ export default function Work() {
             </div>
             <div className="w-[872px]">
               <Typography variant="caption" className="pl-12">
-                *Design process
+                <i>*Design process</i>
               </Typography>
             </div>
           </div>
@@ -207,7 +207,7 @@ export default function Work() {
               </div>
 
               <Typography variant="caption" className="pl-12">
-                *Main personas & Mobile VPC
+                <i>*Main personas & Mobile VPC</i>
               </Typography>
             </div>
           </div>
@@ -300,7 +300,7 @@ export default function Work() {
               </div>
 
               <Typography variant="caption" className="pl-12">
-                *Design vision
+                <i>*Design vision</i>
               </Typography>
             </div>
 
@@ -317,7 +317,7 @@ export default function Work() {
                 />
               </div>
               <Typography variant="caption" className="pl-12">
-                *MVP solution
+                <i>*MVP solution</i>
               </Typography>
             </div>
           </div>

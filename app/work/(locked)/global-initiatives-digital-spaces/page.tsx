@@ -122,7 +122,7 @@ export default function Work() {
             </div>
             <div className="w-[872px]">
               <Typography variant="caption" className="pl-12">
-                *Initial workflows
+                <i>*Initial workflows</i>
               </Typography>
             </div>
           </div>
@@ -196,7 +196,7 @@ export default function Work() {
             </div>
 
             <Typography variant="caption" className="pl-12">
-              *Initial wireframes
+              <i>*Initial wireframes</i>
             </Typography>
           </div>
 
@@ -212,7 +212,7 @@ export default function Work() {
             </div>
 
             <Typography variant="caption" className="pl-12">
-              *Main personas & Prioritization matrix
+              <i>*Main personas & Prioritization matrix</i>
             </Typography>
           </div>
 
@@ -356,7 +356,7 @@ export default function Work() {
               </div>
 
               <Typography variant="caption" className="pl-12">
-                *Editor
+                <i>*Editor</i>
               </Typography>
             </div>
           </div>
