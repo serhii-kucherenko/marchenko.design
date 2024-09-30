@@ -75,11 +75,13 @@ export const PROJECTS_DATA: Project[] = [
     year: "2021-2023",
     description:
       "A centralized repository for drug-related information. Redesigned and increased the efficiency of web content acquisition flows.",
-    status: "coming-soon",
     locked: true,
     image: "/images/projects/project5.png",
-    heroImage: "/images/projects/projects/project3/project3-hero.png",
+    heroImage: "/images/projects/project5/project5-hero.png",
     panoramaImage: "/images/projects/project5/panorama.png",
+    duration: "Spring 2020",
+    role: "UX/UI Designer",
+    client: "Clarivate",
   },
   {
     id: "plastic-policy-creation-platform",
