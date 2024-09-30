@@ -62,10 +62,12 @@ export const PROJECTS_DATA: Project[] = [
     year: "2020-2021",
     description:
       "A website for an award-winning company that is shaping the future of work by reimagining virtual events and amplifying every organization's potential.",
-    status: "coming-soon",
     image: "/images/projects/project4.png",
-    heroImage: "/images/projects/projects/project3/project3-hero.png",
+    heroImage: "/images/projects/project4/project4-hero.png",
     panoramaImage: "/images/projects/project4/panorama.png",
+    duration: "2020-2021",
+    role: "UX/UI Designer",
+    client: "Brandlive",
   },
   {
     id: "web-acquisition-drug-information",
