@@ -89,10 +89,12 @@ export const PROJECTS_DATA: Project[] = [
     year: "2020",
     description:
       "A digital platform for a public-private platform aimed at bringing together policymakers, businesses, and governments to tackle plastic pollution.",
-    status: "coming-soon",
     image: "/images/projects/project6.png",
-    heroImage: "/images/projects/projects/project3/project3-hero.png",
+    heroImage: "/images/projects/project6/project6-hero.png",
     panoramaImage: "/images/projects/project6/panorama.png",
+    duration: "2020-2021",
+    role: "UX/UI Designer",
+    client: "Global Plastic Action Partnership",
   },
   {
     id: "medical-coding-system",
