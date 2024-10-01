@@ -54,6 +54,8 @@ export default function Work() {
         <div className="w-full flex flex-col items-center">
           <div className="relative w-full h-full mb-[48px] aspect-[872/412] overflow-hidden max-w-[872px]">
             <Image
+              placeholder="blur"
+              blurDataURL={project.blurHeroImage}
               src={project.heroImage}
               alt={project.title}
               className="absolute inset-0 w-full h-full img"

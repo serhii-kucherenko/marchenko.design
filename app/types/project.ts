@@ -11,6 +11,7 @@ export interface Project {
   client?: string;
   headline?: string;
   heroImage: string;
+  blurHeroImage: string;
   panoramaImage: string;
 }
 
@@ -24,6 +25,7 @@ export const PROJECTS_DATA: Project[] = [
     locked: true,
     image: "/images/projects/project1.png",
     heroImage: "/images/projects/project1/project1-hero.png",
+    blurHeroImage: "/images/projects/project1/project1-hero2.png",
     duration: "Q2 2023",
     role: "Lead Designer",
     client: "World Economic Forum",
@@ -38,6 +40,7 @@ export const PROJECTS_DATA: Project[] = [
     locked: true,
     image: "/images/projects/project2.png",
     heroImage: "/images/projects/project2/project2-hero.png",
+    blurHeroImage: "/images/projects/project2/project2-hero2.png",
     duration: "2021 - 2024",
     role: "Lead Designer",
     client: "World Economic Forum",
@@ -51,6 +54,7 @@ export const PROJECTS_DATA: Project[] = [
       "A digital platform on a mission to facilitate people's journey toward health, happiness, and prosperity by combining tradition and integrated practices.",
     image: "/images/projects/project3.png",
     heroImage: "/images/projects/project3/project3-hero.png",
+    blurHeroImage: "/images/projects/project3/project3-hero2.png",
     panoramaImage: "/images/projects/project3/panorama.png",
     duration: "May 2021",
     role: "Lead Designer",
@@ -64,6 +68,7 @@ export const PROJECTS_DATA: Project[] = [
       "A website for an award-winning company that is shaping the future of work by reimagining virtual events and amplifying every organization’s potential.",
     image: "/images/projects/project4.png",
     heroImage: "/images/projects/project4/project4-hero.png",
+    blurHeroImage: "/images/projects/project4/project4-hero2.png",
     panoramaImage: "/images/projects/project4/panorama.png",
     duration: "2020-2021",
     role: "UX/UI Designer",
@@ -78,6 +83,7 @@ export const PROJECTS_DATA: Project[] = [
     locked: true,
     image: "/images/projects/project5.png",
     heroImage: "/images/projects/project5/project5-hero.png",
+    blurHeroImage: "/images/projects/project5/project5-hero2.png",
     panoramaImage: "/images/projects/project5/panorama.png",
     duration: "Spring 2020",
     role: "UX/UI Designer",
@@ -91,6 +97,7 @@ export const PROJECTS_DATA: Project[] = [
       "A digital platform for a public-private platform aimed at bringing together policymakers, businesses, and governments to tackle plastic pollution.",
     image: "/images/projects/project6.png",
     heroImage: "/images/projects/project6/project6-hero.png",
+    blurHeroImage: "/images/projects/project6/project6-hero2.png",
     panoramaImage: "/images/projects/project6/panorama.png",
     duration: "2020-2021",
     role: "UX/UI Designer",
@@ -105,6 +112,7 @@ export const PROJECTS_DATA: Project[] = [
     locked: true,
     image: "/images/projects/project7.png",
     heroImage: "/images/projects/project7/project7-hero.png",
+    blurHeroImage: "/images/projects/project7/project7-hero2.png",
     panoramaImage: "/images/projects/project7/panorama.png",
     duration: "2018",
     role: "UX/UI Designer",
@@ -119,6 +127,7 @@ export const PROJECTS_DATA: Project[] = [
     locked: true,
     image: "/images/projects/project8.png",
     heroImage: "/images/projects/project8/project8-hero.png",
+    blurHeroImage: "/images/projects/project8/project8-hero2.png",
     panoramaImage: "/images/projects/project8/panorama.png",
     duration: "2017",
     role: "Lead Designer",
