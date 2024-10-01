@@ -20,7 +20,6 @@ export const ClientLayout = ({ children }: IProps) => {
   const workPath = pathname.split("/").at(-1) || "";
   const project = getProjectById(workPath);
 
-  console.log("project", project);
   console.log({
     isTabledOrMobile,
     isLocked: project?.locked,
