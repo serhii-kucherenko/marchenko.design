@@ -24,7 +24,7 @@ export const PROJECTS_DATA: Project[] = [
     locked: true,
     image: "/images/projects/project1.png",
     heroImage: "/images/projects/project1/project1-hero.png",
-    duration: "2021 - 2024",
+    duration: "Q2 2023",
     role: "Lead Designer",
     client: "World Economic Forum",
     panoramaImage: "/images/projects/project1/panorama.png",
@@ -34,11 +34,11 @@ export const PROJECTS_DATA: Project[] = [
     title: "Digital spaces builder for global initiatives",
     year: "2021-2024",
     description:
-      "A platform that helps initiatives connect with a global ecosystem to increase engagement and collective impact on global issues.",
+      "A platform that helps initiatives connect with a global ecosystem to increase engagement and collective impact on global issues. ",
     locked: true,
     image: "/images/projects/project2.png",
     heroImage: "/images/projects/project2/project2-hero.png",
-    duration: "Q2 2023",
+    duration: "2021 - 2024",
     role: "Lead Designer",
     client: "World Economic Forum",
     panoramaImage: "/images/projects/project2/panorama.png",
@@ -61,7 +61,7 @@ export const PROJECTS_DATA: Project[] = [
     title: "Creative website",
     year: "2020-2021",
     description:
-      "A website for an award-winning company that is shaping the future of work by reimagining virtual events and amplifying every organization's potential.",
+      "A website for an award-winning company that is shaping the future of work by reimagining virtual events and amplifying every organization’s potential.",
     image: "/images/projects/project4.png",
     heroImage: "/images/projects/project4/project4-hero.png",
     panoramaImage: "/images/projects/project4/panorama.png",
@@ -72,7 +72,7 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: "web-acquisition-drug-information",
     title: "Web Acquisition of drug-related information",
-    year: "2021-2023",
+    year: "2020",
     description:
       "A centralized repository for drug-related information. Redesigned and increased the efficiency of web content acquisition flows.",
     locked: true,
@@ -86,7 +86,7 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: "plastic-policy-creation-platform",
     title: "Plastic policy creation platform",
-    year: "2020",
+    year: "2020-2021",
     description:
       "A digital platform for a public-private platform aimed at bringing together policymakers, businesses, and governments to tackle plastic pollution.",
     image: "/images/projects/project6.png",

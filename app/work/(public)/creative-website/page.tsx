@@ -244,6 +244,24 @@ export default function Work() {
             </Typography>
           </div>
 
+          <div className="flex flex-col gap-y-4 items-center">
+            {/*<div className="relative w-screen">*/}
+            <div className="relative w-full aspect-[1440/512] overflow-hidden">
+              <Image
+                src="/images/projects/project4/img3.png"
+                alt="panorama"
+                className="w-full img"
+                width={1440}
+                height={512}
+              />
+            </div>
+            <div className="w-[872px]">
+              <Typography variant="caption" className="pl-12">
+                <i>*Some other screens</i>
+              </Typography>
+            </div>
+          </div>
+
           {/* Business Results & Impact */}
           <div className="grid gap-y-6 max-w-[872px]">
             <Typography
