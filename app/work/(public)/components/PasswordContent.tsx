@@ -19,7 +19,9 @@ export function PasswordContent({ password, setPassword }: IProps) {
 
   const onSubmit = () => {
     if (fullPassword) {
-      if (localPassword === process.env.NEXT_PUBLIC_MARCH) {
+      const passwords = (process.env.NEXT_PUBLIC_MARCH || "").split(",");
+
+      if (passwords.includes(localPassword)) {
         setPassword(localPassword);
       } else {
         setError("Password is incorrect");

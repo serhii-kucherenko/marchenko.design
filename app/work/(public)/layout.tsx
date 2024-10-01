@@ -1,6 +1,6 @@
 "use client";
 
-import { ClientLayout } from "@/app/work/(locked)/components/ClientLayout";
+import { ClientLayout } from "@/app/work/(public)/components/ClientLayout";
 import React from "react";
 
 interface IProps {

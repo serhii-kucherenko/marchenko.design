@@ -5,7 +5,7 @@ import React from "react";
 import { getProjectById, Project } from "@/app/types/project";
 import Image from "next/image";
 
-import { WorkSlider } from "@/app/work/(locked)/components/WorkSlider/WorkSlider";
+import { WorkSlider } from "@/app/work/(public)/components/WorkSlider/WorkSlider";
 import { PageLayoutContainerless } from "@/app/components/page-layout-containerless";
 import { Compare } from "@/components/ui/compare";
 import { AboutButton } from "@/app/components/about-button";
