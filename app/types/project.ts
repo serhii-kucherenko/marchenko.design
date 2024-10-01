@@ -111,16 +111,18 @@ export const PROJECTS_DATA: Project[] = [
     client: "Private company",
   },
   {
-    id: "340B-drug-pricing-program",
-    title: "Healthcare",
+    id: "340B-pharmacy-management",
+    title: "340B pharmacy management",
     year: "2017",
     description:
       "A complex web platform helping healthcare providers manage inventory, track eligible patients, and ensure compliance with the 340B Drug Pricing Program.",
-    status: "coming-soon",
     locked: true,
     image: "/images/projects/project8.png",
-    heroImage: "/images/projects/projects/project3/project3-hero.png",
+    heroImage: "/images/projects/project8/project8-hero.png",
     panoramaImage: "/images/projects/project8/panorama.png",
+    duration: "2017",
+    role: "Lead Designer",
+    client: "340Basics",
   },
 ];
 
