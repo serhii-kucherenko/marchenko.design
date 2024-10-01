@@ -274,6 +274,7 @@ export default function Work() {
           </div>
 
           {/*  IMAGES */}
+
           <div className="flex flex-col gap-y-4 items-center w-full">
             <div className="relative w-full h-full aspect-[872/480] overflow-hidden">
               <Image
@@ -283,7 +284,26 @@ export default function Work() {
                 width={872}
                 height={480}
               />
+
+              <div className="flex items-center justify-center w-full h-full z-50">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-auto h-[402px] z-50"
+                  style={{
+                    boxShadow: "0 4px 6px #00000026",
+                  }}
+                >
+                  <source
+                    src="https://github.com/serhii-kucherenko/marchenko.design/raw/refs/heads/main/public/sources.mov"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
             </div>
+
             <div className="w-[872px]">
               <Typography variant="caption" className="pl-12">
                 <i>*Sources & Acquisition </i>
