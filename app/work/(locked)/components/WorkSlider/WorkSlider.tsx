@@ -24,6 +24,7 @@ export const WorkSlider = ({ workId }: WorkSliderProps) => {
 
   return (
     <Box
+      className="flex flex-col space-y-6"
       sx={{
         "& .swiper": {
           display: "grid",

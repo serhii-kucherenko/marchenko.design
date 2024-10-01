@@ -11,7 +11,7 @@ import { AboutButton } from "@/app/components/about-button";
 import { CVCircle } from "@/app/components/cv-circle";
 import { Compare } from "@/components/ui/compare";
 
-const project = getProjectById("340B-pharmacy-management") as Project;
+const project = getProjectById("pharmacy-management") as Project;
 
 export default function Work() {
   return (
@@ -180,7 +180,7 @@ export default function Work() {
 
           {/*  IMG1 */}
           <div className="grid gap-y-4 w-full max-w-[872px]">
-            <div className="w-[872px] h-[640px] px-1 flex items-center justify-center">
+            <div className="w-[872px] h-[640px] flex items-center justify-center">
               <Compare
                 firstImage="/images/projects/project8/img2.png"
                 secondImage="/images/projects/project8/img2-2.png"

@@ -97,8 +97,8 @@ export const PROJECTS_DATA: Project[] = [
     client: "Global Plastic Action Partnership",
   },
   {
-    id: "medical-indexing-system",
-    title: "Medical indexing system",
+    id: "medical-coding-system",
+    title: "Medical coding system",
     year: "2018",
     description:
       "A platform that allows for coding of medical documents and tracks the efficiency of its workers.",
@@ -111,7 +111,7 @@ export const PROJECTS_DATA: Project[] = [
     client: "Private company",
   },
   {
-    id: "340B-pharmacy-management",
+    id: "pharmacy-management",
     title: "340B pharmacy management",
     year: "2017",
     description:

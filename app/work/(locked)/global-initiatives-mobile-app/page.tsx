@@ -287,7 +287,7 @@ export default function Work() {
           </div>
 
           {/*  GRID */}
-          <div className="grid gap-y-6 w-full max-w-[872px]">
+          <div className="flex flex-col space-y-[72px] items-center justify-center w-full max-w-[872px]">
             <div className="grid gap-y-4 w-full ">
               <div className="relative w-full h-full aspect-[872/480] overflow-hidden">
                 <Image
@@ -305,7 +305,7 @@ export default function Work() {
             </div>
 
             <div className="grid gap-y-4 w-full ">
-              <div className="w-full h-[895px] px-1 flex items-center justify-center">
+              <div className="w-full h-[895px] flex items-center justify-center">
                 <Compare
                   firstImage="/images/projects/project1/img4-light.png"
                   secondImage="/images/projects/project1/img4-dark.png"

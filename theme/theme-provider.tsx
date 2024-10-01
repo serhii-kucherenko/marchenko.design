@@ -20,8 +20,6 @@ export const CustomThemeProvider: React.FC<ThemeProviderProps> = ({
   const isClient = useIsClient();
 
   if (!isClient) {
-    console.log("isClient is false");
-
     return (
       <div className="min-h-screen flex justify-center items-center">
         <AnimatedCircleButton
@@ -32,8 +30,6 @@ export const CustomThemeProvider: React.FC<ThemeProviderProps> = ({
       </div>
     );
   }
-
-  console.log("isClient is true");
 
   return (
     <AppRouterCacheProvider>

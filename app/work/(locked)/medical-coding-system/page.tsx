@@ -10,7 +10,7 @@ import { PageLayoutContainerless } from "@/app/components/page-layout-containerl
 import { AboutButton } from "@/app/components/about-button";
 import { CVCircle } from "@/app/components/cv-circle";
 
-const project = getProjectById("medical-indexing-system") as Project;
+const project = getProjectById("medical-coding-system") as Project;
 
 export default function Work() {
   return (
@@ -158,7 +158,7 @@ export default function Work() {
             </div>
 
             <Typography variant="caption" className="pl-12">
-              <i>*Flow</i>
+              <i>*Indexing process</i>
             </Typography>
           </div>
 

@@ -49,7 +49,7 @@ export default function Work() {
         </Box>
       }
     >
-      <div className="grid gap-y-30 mb-[120px] items-center">
+      <div className="grid gap-y-30 mb-[120px] items-center w-screen">
         <div className="w-full flex flex-col items-center mb-[48px]">
           <div className="relative w-full h-full aspect-[872/412] overflow-hidden max-w-[872px]">
             <Image
@@ -275,7 +275,7 @@ export default function Work() {
 
           {/*  IMAGES */}
 
-          <div className="flex flex-col gap-y-4 items-center w-full">
+          <div className="flex flex-col gap-y-4 items-center w-full max-w-[872px]">
             <div className="relative w-full h-full aspect-[872/480] overflow-hidden">
               <Image
                 src="/images/projects/project5/img3.png"
