@@ -97,16 +97,18 @@ export const PROJECTS_DATA: Project[] = [
     client: "Global Plastic Action Partnership",
   },
   {
-    id: "medical-coding-system",
-    title: "Medical coding system",
+    id: "medical-indexing-system",
+    title: "Medical indexing system",
     year: "2018",
     description:
       "A platform that allows for coding of medical documents and tracks the efficiency of its workers.",
-    status: "coming-soon",
     locked: true,
     image: "/images/projects/project7.png",
-    heroImage: "/images/projects/projects/project3/project3-hero.png",
+    heroImage: "/images/projects/project7/project7-hero.png",
     panoramaImage: "/images/projects/project7/panorama.png",
+    duration: "2018",
+    role: "UX/UI Designer",
+    client: "Private company",
   },
   {
     id: "340B-drug-pricing-program",
