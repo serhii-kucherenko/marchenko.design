@@ -120,7 +120,7 @@ export default function Work() {
             <ul className="pl-12 list-disc">
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  <span className="font-bold">Analysis & Feedback:</span> I
+                  <span className="font-bold">Analysis & feedback:</span> I
                   started by analyzing the existing system and identifying pain
                   points in the workflow. From there, I developed a more
                   efficient flow and validated it with key stakeholders.
@@ -129,7 +129,7 @@ export default function Work() {
               <li>
                 <Typography variant="body1" fontWeight={300}>
                   <span className="font-bold">
-                    Wireframing & Iterative Design:
+                    Wireframing & iterative design:
                   </span>{" "}
                   I created wireframes to visualize the new user interface and
                   gathered feedback, making improvements with a focus on
@@ -138,7 +138,7 @@ export default function Work() {
               </li>
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  <span className="font-bold">Development Handoff:</span> once
+                  <span className="font-bold">Development handoff:</span> once
                   the designs were finalized, I prepared detailed specifications
                   and assets for the development team, ensuring a smooth handoff
                   for implementation.
@@ -203,14 +203,14 @@ export default function Work() {
               <li>
                 <Typography variant="body1" fontWeight={300}>
                   <span className="font-bold">
-                    Personal Dashboard & Calendar:
+                    Personal dashboard & calendar:
                   </span>{" "}
                   coders could now track their work and plan tasks easily.
                 </Typography>
               </li>
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  <span className="font-bold">Simplified Workflow:</span> added
+                  <span className="font-bold">Simplified workflow:</span> added
                   document scanning tech, allowing direct code marking on
                   charts.
                 </Typography>

@@ -275,14 +275,14 @@ export default function Work() {
               <ul className="list-disc pl-6">
                 <li>
                   <Typography variant="body1" fontWeight={300}>
-                    <span className="font-bold">Customizable Workspaces:</span>{" "}
+                    <span className="font-bold">Customizable workspaces:</span>{" "}
                     initiative managers have full control over visual design,
                     content visibility, and participant management.
                   </Typography>
                 </li>
                 <li>
                   <Typography variant="body1" fontWeight={300}>
-                    <span className="font-bold">Collaboration Tools:</span> a
+                    <span className="font-bold">Collaboration tools:</span> a
                     robust selection of tools, chosen by managers as building
                     blocks, enables users to share knowledge, collaborate, and
                     grow their networks.
@@ -290,14 +290,14 @@ export default function Work() {
                 </li>
                 <li>
                   <Typography variant="body1" fontWeight={300}>
-                    <span className="font-bold">Knowledge Repository:</span> a
+                    <span className="font-bold">Knowledge repository:</span> a
                     central space for accessing and sharing world-class
                     insights.
                   </Typography>
                 </li>
                 <li>
                   <Typography variant="body1" fontWeight={300}>
-                    <span className="font-bold">Privacy Controls:</span> owners
+                    <span className="font-bold">Privacy controls:</span> owners
                     manage content visibility, ensuring secure access for both
                     public and private audiences.
                   </Typography>

@@ -117,7 +117,7 @@ export default function Work() {
             <ul className="pl-12 list-disc">
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  <span className="font-bold">Stakeholder Interviews:</span> the{" "}
+                  <span className="font-bold">Stakeholder interviews:</span> the{" "}
                   <span className="font-bold">project began with</span>{" "}
                   stakeholder interviews to gain insights into the vision and
                   goals for the{" "}
@@ -134,7 +134,7 @@ export default function Work() {
               <li>
                 <Typography variant="body1" fontWeight={300}>
                   <span className="font-bold">
-                    Initial Concepts & Iterations:
+                    Initial concepts & iterations:
                   </span>{" "}
                   I developed several initial versions of the website, focusing
                   on how to visually differentiate Brandlive from competitors.
@@ -147,7 +147,7 @@ export default function Work() {
               <li>
                 <Typography variant="body1" fontWeight={300}>
                   <span className="font-bold">
-                    Collaborative & Iterative Process:
+                    Collaborative & iterative process:
                   </span>{" "}
                   the design process was highly collaborative and iterative,
                   involving continuous feedback from the Brandlive team.
@@ -158,7 +158,7 @@ export default function Work() {
               <li>
                 <Typography variant="body1" fontWeight={300}>
                   <span className="font-bold">
-                    Team Expansion & Mentorship:
+                    Team expansion & mentorship:
                   </span>{" "}
                   as the project expanded, I brought in a junior designer to
                   assist. Under my mentorship, the junior designer took on more
@@ -202,7 +202,7 @@ export default function Work() {
 
             <div className="grid gap-y-6 pl-12">
               <Typography variant="body1" fontWeight={300}>
-                <span className="font-bold">Bold Design:</span> the final
+                <span className="font-bold">Bold design:</span> the final
                 website embraced vibrant colors and dynamic visuals that
                 embodied the spirit of Brandlive. This bold approach set the
                 brand apart and reinforced its innovative identity. The main
@@ -221,7 +221,7 @@ export default function Work() {
                 entire website.
               </Typography>
               <Typography variant="body1" fontWeight={300}>
-                <span className="font-bold">Data-Driven Decisions:</span>{" "}
+                <span className="font-bold">Data-driven decisions:</span>{" "}
                 continuous A/B testing guided design choices, ensuring they were
                 backed by real results. Testing variations of layouts and
                 product offerings helped turn more leads into clients.

@@ -138,18 +138,18 @@ export default function Work() {
               <li>
                 <Typography variant="body1" fontWeight={300}>
                   <span className="font-bold">
-                    Stakeholder Interviews & Workshops:
+                    Stakeholder interviews & workshops:
                   </span>{" "}
                   we kicked off the project with collaborative workshops to map
                   user journeys and gather valuable insights. Techniques like
-                  Value Proposition Canvas, Crazy 8s, and As-Is Mapping helped
+                  Value Proposition Canvas, Crazy 8s, and As-is Mapping helped
                   clarify users’ needs.
                 </Typography>
               </li>
               <li>
                 <Typography variant="body1" fontWeight={300}>
                   <span className="font-bold">
-                    Flows & Low-Fidelity Designs:
+                    Flows & low-fidelity designs:
                   </span>{" "}
                   with a solid understanding of the user journey, we created
                   detailed user flows and low-fi designs for validation with
@@ -158,7 +158,7 @@ export default function Work() {
               </li>
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  <span className="font-bold">Prototyping & Testing:</span>{" "}
+                  <span className="font-bold">Prototyping & testing:</span>{" "}
                   after stakeholder approval, we developed high-fidelity
                   prototypes focusing on usability and clarity, ensuring the
                   platform was intuitive and informative for potential users.
@@ -167,7 +167,7 @@ export default function Work() {
               <li>
                 <Typography variant="body1" fontWeight={300}>
                   <span className="font-bold">
-                    Implementation & Refinement:
+                    Implementation & refinement:
                   </span>{" "}
                   the MVP was built using existing WEF community
                   functionalities. Post-launch, we conducted frequent testing
@@ -270,28 +270,28 @@ export default function Work() {
             <ul className="pl-12 list-disc">
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  <span className="font-bold">Readiness Assessment:</span> a
+                  <span className="font-bold">Readiness assessment:</span> a
                   tool that helps countries assess their current capabilities
                   and plan their actions.
                 </Typography>
               </li>
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  <span className="font-bold">Step-by-Step Guide:</span> an
+                  <span className="font-bold">Step-by-step guide:</span> an
                   interactive guide to help users navigate the complex journey
                   over time.
                 </Typography>
               </li>
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  <span className="font-bold">Knowledge Repository:</span>{" "}
+                  <span className="font-bold">Knowledge repository:</span>{" "}
                   centralized knowledge-sharing space where users access best
                   practices, case studies, and country-specific examples.
                 </Typography>
               </li>
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  <span className="font-bold">Community Spaces:</span> dedicated
+                  <span className="font-bold">Community spaces:</span> dedicated
                   areas for collaboration, allowing stakeholders from different
                   countries to share experiences.
                 </Typography>

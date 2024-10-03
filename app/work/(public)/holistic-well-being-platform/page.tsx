@@ -135,7 +135,7 @@ export default function Work() {
             <ul className="pl-12 list-disc">
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  Competitive Analysis: conducted a{" "}
+                  Competitive analysis: conducted a{" "}
                   <span className="font-bold">thorough analysis</span> of key
                   wellness platforms to identify industry best practices,
                   emerging trends, and areas for differentiation.
@@ -143,7 +143,7 @@ export default function Work() {
               </li>
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  User Interviews: conducted{" "}
+                  User interviews: conducted{" "}
                   <span className="font-bold">in-depth interviews</span> to gain
                   insights into user pain points, needs, and desires, which
                   helped uncover unmet needs and informed design decisions.
@@ -160,7 +160,7 @@ export default function Work() {
               </li>
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  Iterative Testing: refined wireframes into interactive
+                  Iterative testing: refined wireframes into interactive
                   prototypes through{" "}
                   <span className="font-bold">iterative testing</span> sessions,
                   validating and fine-tuning design decisions based on user
@@ -224,7 +224,7 @@ export default function Work() {
             <ul className="pl-12 list-disc">
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  <span className="font-bold">Lack of Unified Solutions: </span>{" "}
+                  <span className="font-bold">Lack of unified solutions: </span>{" "}
                   existing wellness products failed to provide a comprehensive,
                   one-stop-shop experience, leading users to juggle multiple
                   platforms.
@@ -233,7 +233,7 @@ export default function Work() {
               <li>
                 <Typography variant="body1" fontWeight={300}>
                   <span className="font-bold">
-                    Need for Continuous Support:{" "}
+                    Need for continuous support:{" "}
                   </span>{" "}
                   users expressed the need for ongoing motivation and expert
                   guidance to maintain their wellness journey.
@@ -241,7 +241,7 @@ export default function Work() {
               </li>
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  <span className="font-bold">Holistic Differentiation: </span>{" "}
+                  <span className="font-bold">Holistic differentiation: </span>{" "}
                   a complete ecosystem that covers all aspects of well-being,
                   including{" "}
                   <span className="font-bold">
@@ -367,13 +367,13 @@ export default function Work() {
             <ul className="pl-12 list-disc">
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  Listen to Users: sometimes you need to niche down, while other
+                  Listen to users: sometimes you need to niche down, while other
                   times you need to expand.
                 </Typography>
               </li>
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  Share Vision & Foster Collaboration: despite tough timelines
+                  Share vision & foster collaboration: despite tough timelines
                   and pressure, teams can achieve outstanding results with clear
                   planning, a unified vision, and strong leadership.{" "}
                   <span className="font-bold">

@@ -151,7 +151,7 @@ export default function Work() {
               </li>
               <li>
                 <Typography variant="body1" fontWeight={300}>
-                  <span className="font-bold">As-Is mapping:</span> collaborated
+                  <span className="font-bold">As-is mapping:</span> collaborated
                   with stakeholders, developers, and QA teams to map the current
                   state of all user flows.
                 </Typography>
