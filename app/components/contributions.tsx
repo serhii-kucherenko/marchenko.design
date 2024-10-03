@@ -1,10 +1,8 @@
-import { Link, Typography, useTheme } from "@mui/material";
+import { Link, Typography } from "@mui/material";
 import React from "react";
 import { InfoSection } from "./info-section";
 
 export const Contributions: React.FC = () => {
-  const theme = useTheme();
-
   return (
     <InfoSection title="Contributions">
       <ul
@@ -26,7 +24,7 @@ export const Contributions: React.FC = () => {
               href="https://www.windmill.digital/playbooks/the-design-sprint-playbook/"
               target="_blank"
             >
-              The Design Sprint Playbook
+              The design sprint playbook
             </Typography>
           </Typography>
         </li>

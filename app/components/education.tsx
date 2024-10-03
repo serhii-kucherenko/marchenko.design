@@ -19,13 +19,13 @@ export const Education: React.FC = () => {
           Lviv Polytechnic National University
         </Typography>
         <Typography variant="h4" fontWeight={600} pb={1}>
-          Bachelor&apos;s degree in Information services
+          Bachelor&apos;s Degree in Information Services
         </Typography>
         <Typography variant="h5" color="primary.contrastText" pb={2}>
           Odessa National Polytechnic University
         </Typography>
         <Typography variant="h4" fontWeight={600} pb={1}>
-          Class of Fine Arts
+          Fine Arts (Extracurricular Education)
         </Typography>
         <Typography variant="h5" color="primary.contrastText" pb={2}>
           School of Arts, Odessa
@@ -38,7 +38,7 @@ export const Education: React.FC = () => {
           lineHeight="36px"
         >
           Designing for complex UI • Build persuasive products • User research
-          (IDF) • Mobile UX Design (IDF) • Mobile UI / UX design • Web
+          (IDF) • Mobile UX design (IDF) • Mobile UI / UX design • Web
           development • Commercial illustration • Brand identity
         </Typography>
       </Stack>
