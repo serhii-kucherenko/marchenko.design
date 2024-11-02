@@ -16,7 +16,7 @@ export const ProfileAvatar: React.FC = () => {
       }}
     >
       <Image
-        src="/images/avatar.png"
+        src="/images/cv_photo.png"
         alt="avatar"
         width={424}
         height={512}
@@ -24,6 +24,6 @@ export const ProfileAvatar: React.FC = () => {
       />
     </Box>
   ) : (
-    <Image src="/images/avatar.png" alt="avatar" width={424} height={512} />
+    <Image src="/images/cv_photo.png" alt="avatar" width={424} height={512} />
   );
 };
