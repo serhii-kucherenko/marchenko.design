@@ -7,6 +7,12 @@ export const Education: React.FC = () => {
     <InfoSection title="Education & Courses">
       <Stack>
         <Typography variant="h4" fontWeight={600} pb={1}>
+          Dare to Lead Trained
+        </Typography>
+        <Typography variant="h5" color="primary.contrastText" pb={2}>
+          Douglas College
+        </Typography>
+        <Typography variant="h4" fontWeight={600} pb={1}>
           Professional Certificate in Business Fundamentals
         </Typography>
         <Typography variant="h5" color="primary.contrastText" pb={2}>
