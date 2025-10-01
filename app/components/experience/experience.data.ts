@@ -1,5 +1,19 @@
 export const experience = [
   {
+    title: "Product Designer at Freelance",
+    date: "January 2016 - Present",
+    bulletPoints: [
+      "Successfully delivered multiple projects under NDAs, including product launches and design revamps, with a focus on increasing audience reach and overall functionality improvements.",
+    ],
+  },
+    {
+    title: "Principal Designer at GameofGo",
+    date: "September 2024 - February 2025",
+    bulletPoints: [
+      "Directed market research, POC, branding (including mascot), and MVP design for a Swiss startup creating a beginner-friendly Go platform – aimed at making learning and playing accessible, driving interest, and enabling scalable feature growth.",
+    ],
+  },
+  {
     title: "Lead Product Designer at Windmill/WEF",
     date: "December 2021 - January 2024",
     bulletPoints: [
@@ -18,13 +32,6 @@ export const experience = [
       "Played a pivotal role in a company rebranding and website revamp, resulting in an enhanced online presence and higher number of followers.",
       "Helped redesign and simplify a complex system for gathering and analyzing document updates from different sources to build a knowledge database.",
       "Acted as a mentor for 4 team members from various projects, fostering skill development and contributing to a positive team culture.",
-    ],
-  },
-  {
-    title: "Product Designer at Freelance",
-    date: "January 2016 - Present",
-    bulletPoints: [
-      "Successfully delivered multiple projects under NDAs, including product launches and design revamps, with a focus on increasing audience reach and overall functionality improvements.",
     ],
   },
   {
