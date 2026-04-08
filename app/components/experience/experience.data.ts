@@ -1,7 +1,14 @@
 export const experience = [
+   {
+    title: "Product Design Lead at Untether Labs",
+    date: "October 2025 - Present",
+    bulletPoints: [
+      "Lead product design across web and mobile for a healthcare workforce management platform, creating solutions that simplify complex operational workflows and support more efficient scheduling, and team coordination.",
+    ],
+  },
   {
     title: "Product Designer at Freelance",
-    date: "January 2016 - Present",
+    date: "January 2016 - October 2025",
     bulletPoints: [
       "Successfully delivered multiple projects under NDAs, including product launches and design revamps, with a focus on increasing audience reach and overall functionality improvements.",
     ],
