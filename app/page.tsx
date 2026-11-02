@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <PageLayout
       title="Marchenko Anastasiia"
-      upperTitle="Lead Product Designer"
+      upperTitle="Principal Product Designer"
       floatButton={<CVCircle />}
       floatSideButton={<WorkCircle position="left" />}
     >
@@ -84,7 +84,7 @@ export default function Home() {
             About
           </Typography>
           <Typography variant="body1" sx={{ mb: 1 }}>
-            As a <strong>lead designer</strong> with over 10 years of experience,
+            As a <strong>principal designer</strong> with 11 years of experience,
             I specialize in{" "}
             <strong>
               crafting design solutions in the realms of social collaboration

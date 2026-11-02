@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <PageLayout
       title="Marchenko Anastasiia"
-      upperTitle="Lead Product Designer"
+      upperTitle="Principal Product Designer"
       floatButton={<AboutButton />}
       floatSideButton={!isMDAndDown && <WorkCircle position="left" />}
       subHeading={
