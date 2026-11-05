@@ -18,12 +18,28 @@ export const ProfileAvatar: React.FC = () => {
       <Image
         src="/images/cv_photo.png"
         alt="avatar"
-        width={424}
-        height={512}
-        style={{ width: "100%", objectFit: "contain", objectPosition: "top" }}
+        width={200}
+        height={224}
+        style={{
+          width: 200,
+          height: 224,
+          objectFit: "cover",
+          objectPosition: "top",
+        }}
       />
     </Box>
   ) : (
-    <Image src="/images/cv_photo.png" alt="avatar" width={424} height={512} />
+    <Image
+      src="/images/cv_photo.png"
+      alt="avatar"
+      width={200}
+      height={224}
+      style={{
+        width: 200,
+        height: 224,
+        objectFit: "cover",
+        objectPosition: "top",
+      }}
+    />
   );
 };

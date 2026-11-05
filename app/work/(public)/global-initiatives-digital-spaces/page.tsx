@@ -382,7 +382,7 @@ export default function Work() {
                 decade.
               </Typography>
 
-              <div className="grid grid-cols-3 gap-0 py-3">
+              <div className="grid grid-cols-4 gap-0 py-3">
                 <div className="grid gap-y-2">
                   <Typography
                     variant="h2"
@@ -390,7 +390,7 @@ export default function Work() {
                     fontSize={32}
                     lineHeight={40 / 32}
                   >
-                    65+
+                    1,000+
                   </Typography>
 
                   <Typography
@@ -398,7 +398,7 @@ export default function Work() {
                     fontWeight={700}
                     className="text-[#02040599]"
                   >
-                    Live spaces
+                    Organizations
                   </Typography>
                 </div>
                 <div className="grid gap-y-2">
@@ -408,7 +408,7 @@ export default function Work() {
                     fontSize={32}
                     lineHeight={40 / 32}
                   >
-                    ~500K
+                    200+
                   </Typography>
 
                   <Typography
@@ -416,7 +416,7 @@ export default function Work() {
                     fontWeight={700}
                     className="text-[#02040599]"
                   >
-                    Unique visitors
+                    Initiatives
                   </Typography>
                 </div>
                 <div className="grid gap-y-2">
@@ -434,7 +434,25 @@ export default function Work() {
                     fontWeight={700}
                     className="text-[#02040599]"
                   >
-                    Pages visited
+                    Digital members
+                  </Typography>
+                </div>
+                <div className="grid gap-y-2">
+                  <Typography
+                    variant="h2"
+                    fontWeight={800}
+                    fontSize={32}
+                    lineHeight={40 / 32}
+                  >
+                    4.5M
+                  </Typography>
+
+                  <Typography
+                    variant="h5"
+                    fontWeight={700}
+                    className="text-[#02040599]"
+                  >
+                    Public visitors (mnt)
                   </Typography>
                 </div>
               </div>
@@ -442,9 +460,10 @@ export default function Work() {
               <Typography variant="body1" fontWeight={300}>
                 It enhanced collaboration among global leaders, leading to more
                 informed, actionable outcomes on critical issues. As of now,
-                over 100 initiatives have adopted the platform, which continues
-                to evolve, adding new features and further solidifying its role
-                as a key tool in global collaboration efforts.
+                1,000+ organizations and 200+ initiatives have adopted the
+                platform, which continues to evolve, adding new features and
+                further solidifying its role as a key tool in global
+                collaboration efforts.
               </Typography>
             </div>
           </div>

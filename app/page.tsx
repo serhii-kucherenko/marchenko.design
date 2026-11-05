@@ -35,6 +35,7 @@ export default function Home() {
           [theme.breakpoints.up("sm")]: {
             flexDirection: "row",
             gap: 3,
+            alignItems: "center",
           },
           [theme.breakpoints.up("md")]: {
             gap: 6,
@@ -47,7 +48,8 @@ export default function Home() {
               width: "100%",
             },
             [theme.breakpoints.up("sm")]: {
-              width: "50%",
+              width: 200,
+              flexShrink: 0,
             },
           }}
         >
@@ -55,64 +57,34 @@ export default function Home() {
         </Box>
         <Stack
           sx={{
-            mb: 6,
+            mb: { xs: 6, sm: 0 },
 
             [theme.breakpoints.up("xs")]: {
               width: "100%",
             },
             [theme.breakpoints.up("sm")]: {
-              width: "50%",
+              flex: 1,
+              minWidth: 0,
             },
           }}
         >
-          <Typography
-            variant="subtitle1"
-            sx={{
-              mb: 1,
-
-              [theme.breakpoints.up("xs")]: {
-                mt: 3,
-              },
-
-              [theme.breakpoints.up("md")]: {
-                mt: 6,
-              },
-            }}
-            textTransform="uppercase"
-            color="text.secondary"
-          >
-            About
-          </Typography>
           <Typography variant="body1" sx={{ mb: 1 }}>
-            As a <strong>principal designer</strong> with 11 years of experience,
-            I specialize in{" "}
             <strong>
-              crafting design solutions in the realms of social collaboration
-              and healthcare/wellness.
+              11 years of experience taking products from concept to launch
             </strong>{" "}
+            in the realms of social collaboration, healthcare and wellness.
           </Typography>
           <Typography variant="body1" sx={{ mb: 1 }}>
-            Leveraging my background in public relations and strong
-            problem-solving skills, I bring a user-centric approach to inform
-            design decisions.
-          </Typography>
-          <Typography variant="body1" sx={{ mb: 1 }}>
-            My unique{" "}
-            <strong>blend of artistic vision and natural leadership</strong>{" "}
-            makes me a valuable asset to various teams. I not only craft
-            compelling experiences but also foster strong collaboration with
-            cross-functional teams, creating an environment where diverse
-            perspectives converge into cohesive, impactful solutions.{" "}
+            My background in fine arts, PR and business shapes how I work. I
+            combine artistic vision and natural leadership to{" "}
             <strong>
-              I excel in overseeing projects from conception to completion.
+              bring people and ideas together, shape where a product goes
             </strong>{" "}
+            and work through the details to get it there.
           </Typography>
           <Typography variant="body1">
-            So if you&apos;re seeking to elevate your project&apos;s design,
-            foster teamwork, and navigate processes with an unwavering
-            commitment to excellence,{" "}
             <Link href="mailto:hi.marchenko@gmail.com">
-              <strong>shoot me an email</strong>
+              <strong>Shoot me an email</strong>
             </Link>{" "}
             I&apos;m happy to discuss how I can contribute to your team&apos;s
             success.

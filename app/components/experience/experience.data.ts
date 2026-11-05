@@ -1,6 +1,6 @@
 export const experience = [
    {
-    title: "Product Design Lead at Untether Labs",
+    title: "Principal Product Designer at Untether Labs",
     date: "October 2025 - Present",
     bulletPoints: [
       "Lead product design across web and mobile for a healthcare workforce management platform, creating solutions that simplify complex operational workflows and support more efficient scheduling, and team coordination.",
