@@ -31,14 +31,18 @@ export default function Home() {
 
           [theme.breakpoints.up("xs")]: {
             flexDirection: "column",
+            gap: 4,
+            paddingBottom: theme.spacing(6),
           },
           [theme.breakpoints.up("sm")]: {
             flexDirection: "row",
             gap: 3,
             alignItems: "center",
+            paddingBottom: theme.spacing(9),
           },
           [theme.breakpoints.up("md")]: {
             gap: 6,
+            paddingBottom: theme.spacing(12),
           },
         }}
       >
