@@ -11,6 +11,7 @@ interface IProps {
   desktopImage: (props: { width: number; height: number }) => ReactNode;
   hoverColor?: string;
   breakpointAndDown?: Breakpoint;
+  desktopFixed?: boolean;
   className?: string;
 }
 

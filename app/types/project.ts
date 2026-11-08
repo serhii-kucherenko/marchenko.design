@@ -4,6 +4,7 @@ export interface Project {
   year: string;
   description: string;
   status?: string;
+  hidden?: boolean;
   locked?: boolean;
   image: string;
   duration?: string;
@@ -66,6 +67,7 @@ export const PROJECTS_DATA: Project[] = [
     year: "2020-2021",
     description:
       "A website for an award-winning company that is shaping the future of work by reimagining virtual events and amplifying every organization’s potential.",
+    hidden: true,
     image: "/images/projects/project4.png",
     heroImage: "/images/projects/project4/project4-hero.png",
     blurHeroImage: "/images/projects/project4/project4-hero2.png",
@@ -109,6 +111,7 @@ export const PROJECTS_DATA: Project[] = [
     year: "2018",
     description:
       "A platform that allows for coding of medical documents and tracks the efficiency of its workers.",
+    hidden: true,
     locked: true,
     image: "/images/projects/project7.png",
     heroImage: "/images/projects/project7/project7-hero.png",
@@ -140,5 +143,5 @@ export const getProjectById = (id: string): Project | undefined => {
 };
 
 export const getRecommendedProjects = (id: string): Project[] => {
-  return PROJECTS_DATA.filter((project) => project.id !== id);
+  return PROJECTS_DATA.filter((project) => project.id !== id && !project.hidden);
 };

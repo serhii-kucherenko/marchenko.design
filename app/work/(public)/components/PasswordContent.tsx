@@ -1,10 +1,9 @@
 "use client";
 import React, { useState } from "react";
 
-import ArrowRightIcon from "../../../../public/images/arrow-right-icon.svg";
-
 import { Box, Typography } from "@mui/material";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 interface IProps {
   password: string;
@@ -40,7 +39,7 @@ export function PasswordContent({ password, setPassword }: IProps) {
           color="primary.main"
           fontWeight="400"
           component={Link}
-          href="/work"
+          href="/"
         >
           BACK TO WORKS
         </Typography>
@@ -100,21 +99,15 @@ export function PasswordContent({ password, setPassword }: IProps) {
             <Box
               onClick={onSubmit}
               component="span"
-              className={`absolute right-6 cursor-pointer transform -translate-y-1/2 top-1/2 transition-colors duration-300 ${
-                fullPassword ? "text-red-600" : "text-gray-400"
-              }`}
+              className="absolute right-6 cursor-pointer transform -translate-y-1/2 top-1/2 transition-colors duration-300"
               sx={{
-                "& .colored": {
-                  transition: "fill 300ms",
-                  fill: fullPassword ? "#C42D1C" : "#02040599",
-                },
-
-                "&:hover .colored": {
-                  fill: fullPassword ? "#A72618" : "#02040599",
+                color: fullPassword || error ? "#C42D1C" : "#020405",
+                "&:hover": {
+                  color: fullPassword || error ? "#A72618" : "#020405",
                 },
               }}
             >
-              <ArrowRightIcon width={24} height={24} />
+              <ArrowRight size={24} strokeWidth={1.5} />
             </Box>
           </div>
         </div>

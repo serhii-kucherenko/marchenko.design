@@ -7,7 +7,7 @@ import { getRecommendedProjects } from "@/app/types/project";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Box, Typography } from "@mui/material";
-import LeftButtonArrow from "@/public/images/arrow-left-button.svg";
+import { ArrowLeft } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import type { Swiper as SwiperClass } from "swiper/types";
@@ -40,36 +40,35 @@ export const WorkSlider = ({ workId }: WorkSliderProps) => {
         },
       }}
     >
-      <div className="pl-[84px] flex w-full justify-between">
+      <div className="flex w-full items-center justify-between pl-[84px]">
         <Typography variant="h2" fontSize={56} fontWeight={500}>
           Check more works
         </Typography>
 
         <Box
-          sx={{
-            "& > *": {
-              cursor: "pointer",
-            },
-
-            "& .active path": {
-              fillOpacity: 0.6,
-            },
-          }}
           className="flex space-x-4"
         >
-          <LeftButtonArrow
-            className={cn({
-              active: activeIndex > 0,
-            })}
+          <ArrowLeft
+            size={32}
+            strokeWidth={1}
+            className={cn(
+              "cursor-pointer transition-opacity",
+              activeIndex > 0 ? "opacity-100" : "opacity-30",
+            )}
             onClick={() => {
               swiper?.slidePrev();
             }}
           />
 
-          <LeftButtonArrow
-            className={cn("transform rotate-180", {
-              active: activeIndex < recommendedProjects.length - 2,
-            })}
+          <ArrowLeft
+            size={32}
+            strokeWidth={1}
+            className={cn(
+              "rotate-180 cursor-pointer transition-opacity",
+              activeIndex < recommendedProjects.length - 2
+                ? "opacity-100"
+                : "opacity-30",
+            )}
             onClick={() => {
               swiper?.slideNext();
             }}
@@ -90,7 +89,7 @@ export const WorkSlider = ({ workId }: WorkSliderProps) => {
             <Link
               href={
                 project.status === "coming-soon"
-                  ? "/work"
+                  ? "/"
                   : `/work/${project.id}`
               }
             >

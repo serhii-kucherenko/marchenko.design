@@ -15,7 +15,7 @@ interface ProjectsProps {
 export function ProjectCard({ project, index }: ProjectsProps) {
   return (
     <Link
-      href={project.status === "coming-soon" ? "/work" : `/work/${project.id}`}
+      href={project.status === "coming-soon" ? "/" : `/work/${project.id}`}
     >
       <Box className={`relative ${index % 2 !== 0 ? "md:mt-10 lg:mt-12" : ""}`}>
         <Box

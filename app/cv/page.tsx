@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 
 import { PageLayout } from "../components/page-layout";
-import { AboutButton } from "../components/about-button";
 import { ExperienceList } from "../components/experience/experience-list";
 import { Education } from "../components/education";
 import { Skills } from "../components/skills";
@@ -26,8 +25,7 @@ export default function Home() {
     <PageLayout
       title="Marchenko Anastasiia"
       upperTitle="Principal Product Designer"
-      floatButton={<AboutButton />}
-      floatSideButton={!isMDAndDown && <WorkCircle position="left" />}
+      floatButton={<WorkCircle href="/" />}
       subHeading={
         <Box
           sx={{

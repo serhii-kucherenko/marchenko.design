@@ -10,6 +10,7 @@ interface IProps {
   className?: string;
   hoverColor?: string;
   breakpointAndDown?: Breakpoint;
+  desktopFixed?: boolean;
 }
 
 export const CircleButton: React.FC<IProps> = ({
@@ -20,12 +21,13 @@ export const CircleButton: React.FC<IProps> = ({
   className = "",
   hoverColor,
   breakpointAndDown = "sm",
+  desktopFixed = false,
 }) => {
   const theme = useTheme();
   const isXAndDown = useMediaQuery(theme.breakpoints.down(breakpointAndDown));
   const size = isXAndDown ? 160 : 200;
   const styles: SxProps = {
-    position: "absolute",
+    position: !isXAndDown && desktopFixed ? "fixed" : "absolute",
     width: size,
     height: size,
     borderRadius: "50%",

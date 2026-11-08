@@ -7,7 +7,7 @@ import Image from "next/image";
 
 import { WorkSlider } from "@/app/work/(public)/components/WorkSlider/WorkSlider";
 import { PageLayoutContainerless } from "@/app/components/page-layout-containerless";
-import { AboutButton } from "@/app/components/about-button";
+import { WorkCircle } from "@/app/components/work-circle";
 import { CVCircle } from "@/app/components/cv-circle";
 
 const project = getProjectById("web-acquisition-drug-information") as Project;
@@ -15,7 +15,7 @@ const project = getProjectById("web-acquisition-drug-information") as Project;
 export default function Work() {
   return (
     <PageLayoutContainerless
-      floatSideButton={<AboutButton position="left" breakpointAndDown="md" />}
+      floatSideButton={<WorkCircle position="left" breakpointAndDown="md" href="/" desktopFixed />}
       floatButton={<CVCircle />}
       title={project.title}
       upperTitle={
@@ -25,7 +25,7 @@ export default function Work() {
           color="primary.main"
           fontWeight="400"
           component={Link}
-          href="/work"
+          href="/"
         >
           BACK TO WORKS
         </Typography>

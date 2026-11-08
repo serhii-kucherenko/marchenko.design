@@ -26,7 +26,7 @@ export function TableMobileContent() {
           color="primary.main"
           fontWeight="400"
           component={Link}
-          href="/work"
+          href="/"
         >
           BACK TO WORKS
         </Typography>
