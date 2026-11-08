@@ -20,12 +20,14 @@ const comingSoonProjects = [
   {
     title: "Enterprise event platform",
     year: "2026",
+    image: "/images/eventbase-coming-soon.png",
     description:
       "Led the design of a major platform relaunch, redesigning the experience across organizer tools and attendee apps, from core workflows to the design systems behind them.",
   },
   {
     title: "Workforce management platform",
     year: "2025–2026",
+    image: "/images/untether-coming-soon.png",
     description:
       "Led design direction across the platform, bringing consistency to workflows and design patterns while introducing new functionality and creating a mobile app for providers.",
   },
@@ -189,20 +191,14 @@ export const AboutWorkSection = () => {
               key={project.title}
               className="relative"
             >
-              <Box
-                className="relative mb-4 flex aspect-[424/288] items-center justify-center bg-[#e9e8ea]"
-              >
-                <Typography
-                  variant="h3"
-                  fontWeight="600"
-                  color="text.secondary"
-                  textTransform="uppercase"
-                >
-                  Coming soon
-                </Typography>
-                <Box className="absolute right-5 top-5">
-                  <LockIcon width={36} height={37} />
-                </Box>
+              <Box className="relative mb-4 aspect-[424/288] overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={`${project.title} coming soon`}
+                  className="absolute inset-0 h-full w-full object-cover"
+                  width={424}
+                  height={288}
+                />
               </Box>
               <ProjectDetails project={project} />
             </Box>
