@@ -94,7 +94,7 @@ const ReachOutSection = () => (
       position: "relative",
       mt: { md: 1 },
       pl: { md: 6 },
-      pr: { md: 0 },
+      pr: { md: 6 },
       pb: { md: 3.5 },
     }}
   >
@@ -119,7 +119,7 @@ const ReachOutSection = () => (
       sx={{
         position: { xs: "relative", md: "absolute" },
         top: { md: 25 },
-        right: { md: 0 },
+        right: { md: "48px" },
         mt: { xs: 3, md: 0 },
         ml: { xs: "auto", md: 0 },
         width: { xs: 128, md: 160 },
