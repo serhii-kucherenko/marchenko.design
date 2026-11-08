@@ -16,6 +16,7 @@ import { Skills } from "../components/skills";
 import { Contributions } from "../components/contributions";
 import { DownloadButton } from "@/app/components/download-button";
 import { WorkCircle } from "@/app/components/work-circle";
+import { ReachOutSection } from "@/app/components/about-work-section";
 
 export default function Home() {
   const theme = useTheme();
@@ -52,13 +53,41 @@ export default function Home() {
               },
             }}
           >
+            Linkedin:{" "}
+            <Typography
+              variant="h4"
+              component={Link}
+              href="https://www.linkedin.com/in/anastasiia-marchenko/"
+              target="_blank"
+              fontWeight="400"
+              fontSize="16px"
+            >
+              anastasiia-marchenko
+            </Typography>
+          </Typography>
+          <Typography
+            variant="h4"
+            fontSize="16px"
+            fontWeight="500"
+            sx={{
+              [theme.breakpoints.up("xs")]: {
+                width: "100%",
+              },
+              [theme.breakpoints.up("sm")]: {
+                width: "50%",
+              },
+              [theme.breakpoints.up("md")]: {
+                width: "auto",
+              },
+            }}
+          >
             Email:{" "}
             <Typography
               variant="h4"
               component={Link}
               href="mailto:hi.marchenko@gmail.com"
-              fontWeight="400"
               fontSize="16px"
+              fontWeight="400"
             >
               hi.marchenko@gmail.com
             </Typography>
@@ -119,34 +148,6 @@ export default function Home() {
               @anamarchenko
             </Typography>
           </Typography>
-          <Typography
-            variant="h4"
-            fontSize="16px"
-            fontWeight="500"
-            sx={{
-              [theme.breakpoints.up("xs")]: {
-                width: "100%",
-              },
-              [theme.breakpoints.up("sm")]: {
-                width: "50%",
-              },
-              [theme.breakpoints.up("md")]: {
-                width: "auto",
-              },
-            }}
-          >
-            Linkedin:{" "}
-            <Typography
-              variant="h4"
-              component={Link}
-              href="https://www.linkedin.com/in/anastasiia-marchenko/"
-              target="_blank"
-              fontSize="16px"
-              fontWeight="400"
-            >
-              anastasiia-marchenko
-            </Typography>
-          </Typography>
         </Box>
       }
     >
@@ -169,13 +170,15 @@ export default function Home() {
       >
         <DownloadButton />
 
-        <Skills />
-
         <ExperienceList />
+
+        <Skills />
 
         <Contributions />
 
         <Education />
+
+        <ReachOutSection />
       </Stack>
     </PageLayout>
   );

@@ -88,7 +88,7 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => (
   </Box>
 );
 
-const ReachOutSection = () => (
+export const ReachOutSection = () => (
   <Box
     sx={{
       position: "relative",
