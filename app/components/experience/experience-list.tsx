@@ -11,6 +11,7 @@ export const ExperienceList: React.FC = () => {
           key={index}
           title={exp.title}
           date={exp.date}
+          description={exp.description}
           bulletPoints={exp.bulletPoints}
         />
       ))}

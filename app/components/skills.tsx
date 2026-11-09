@@ -6,10 +6,9 @@ export const Skills: React.FC = () => {
   return (
     <InfoSection title="Skills">
       <Typography variant="h5" fontWeight={600} pb={1} lineHeight="32px">
-        UI/UX design expertise • Design thinking • User-centric design •
-        Usability testing • Problem solving • Project management • Process
-        improvement • Decision making • Research & analytics • Mentoring • Team
-        collaboration • Natural leadership
+        Product strategy • Stakeholder alignment • Interaction design •
+        Information architecture • Web & mobile design • User research •
+        Usability testing • Design systems • Mentoring
       </Typography>
     </InfoSection>
   );

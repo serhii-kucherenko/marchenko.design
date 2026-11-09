@@ -4,6 +4,7 @@ import React from "react";
 interface ExperienceProps {
   title: string;
   date: string;
+  description?: string;
   bulletPoints: string[];
 }
 
@@ -39,6 +40,7 @@ const renderBulletPoint = (bulletPoint: string) => {
 export const ExperienceItem: React.FC<ExperienceProps> = ({
   title,
   date,
+  description,
   bulletPoints,
 }) => {
   return (
@@ -49,6 +51,11 @@ export const ExperienceItem: React.FC<ExperienceProps> = ({
       <Typography variant="h5" color="primary.contrastText" pb={2}>
         {date}
       </Typography>
+      {description && (
+        <Typography variant="body1" fontWeight={300} pb={2}>
+          {description}
+        </Typography>
+      )}
       {bulletPoints.length > 0 && (
         <ul
           style={{

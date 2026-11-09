@@ -258,7 +258,12 @@ export const AboutWorkSection = () => {
             >
               2024
             </Typography>
-            <Typography variant="h3" flex={1} fontWeight="600">
+            <Typography
+              variant="h3"
+              flex={1}
+              fontWeight="600"
+              sx={{ fontSize: { xs: 20, md: 22 }, lineHeight: { xs: 1.2, md: 40 / 22 } }}
+            >
               Gameofgo — Coming soon
             </Typography>
             <Typography
@@ -303,6 +308,7 @@ export const AboutWorkSection = () => {
                   flex={1}
                   fontWeight="600"
                   className="transition-colors duration-150 group-hover:text-[#A72618]"
+                  sx={{ fontSize: { xs: 20, md: 22 }, lineHeight: { xs: 1.2, md: 40 / 22 } }}
                 >
                   {project.title}
                 </Typography>

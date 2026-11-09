@@ -5,17 +5,17 @@ import { ebGaramond, inter } from "@/theme/typography";
 
 export const metadata: Metadata = {
   title: {
-    default: "Marchenko Anastasiia | Product Designer",
-    template: "%s | Marchenko Anastasiia",
+    default: "Anastasiia Marchenko | Product Designer",
+    template: "%s | Anastasiia Marchenko",
   },
   description:
     "Product designer | Bridging Artistic Vision with User-Centric Solutions",
   openGraph: {
-    title: "Marchenko Anastasiia | Product Designer",
+    title: "Anastasiia Marchenko | Product Designer",
     description:
       "Product designer | Bridging Artistic Vision with User-Centric Solutions",
     url: "https://marchenko.design",
-    siteName: "Marchenko Anastasiia",
+    siteName: "Anastasiia Marchenko",
     images: [
       {
         url: "https://marchenko.design/og.png",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Marchenko Anastasiia | Product Designer",
+    title: "Anastasiia Marchenko | Product Designer",
     card: "summary_large_image",
   },
   icons: {

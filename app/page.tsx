@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <PageLayout
-      title="Marchenko Anastasiia"
+      title="Anastasiia Marchenko"
       upperTitle="Principal Product Designer"
       floatButton={<CVCircle />}
     >

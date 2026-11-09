@@ -13,7 +13,7 @@ import { PageLayout } from "../components/page-layout";
 import { ExperienceList } from "../components/experience/experience-list";
 import { Education } from "../components/education";
 import { Skills } from "../components/skills";
-import { Contributions } from "../components/contributions";
+import { ProfessionalDevelopment } from "../components/professional-development";
 import { DownloadButton } from "@/app/components/download-button";
 import { WorkCircle } from "@/app/components/work-circle";
 import { ReachOutSection } from "@/app/components/about-work-section";
@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <PageLayout
-      title="Marchenko Anastasiia"
+      title="Anastasiia Marchenko"
       upperTitle="Principal Product Designer"
       floatButton={<WorkCircle href="/" />}
       subHeading={
@@ -174,9 +174,9 @@ export default function Home() {
 
         <Skills />
 
-        <Contributions />
-
         <Education />
+
+        <ProfessionalDevelopment />
 
         <ReachOutSection />
       </Stack>
