@@ -77,6 +77,12 @@ a.MuiTypography-root:hover {
   color: #A72618;
 }
 
+.accessible-inline-link {
+  display: inline-block;
+  margin-block: -3px;
+  padding-block: 3px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

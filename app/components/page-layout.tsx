@@ -103,6 +103,7 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
                 {typeof upperTitle === "string" ? (
                   <Typography
                     variant="subtitle2"
+                    component="p"
                     textTransform="uppercase"
                     color="text.secondary"
                     fontWeight="400"
@@ -137,6 +138,7 @@ export const PageLayout: React.FC<PropsWithChildren<IProps>> = ({
               </Stack>
 
               <Box
+                component="main"
                 sx={{
                   display: "flex",
                   width: 1,

@@ -66,6 +66,7 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => (
   <Box sx={{ width: { xs: 1, md: 400 } }}>
     <Typography
       variant="h4"
+      component="h3"
       fontWeight="600"
       lineHeight="24px"
       mb={0.5}
@@ -75,6 +76,7 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => (
     </Typography>
     <Typography
       variant="h5"
+      component="p"
       fontWeight="500"
       lineHeight="22px"
       color="primary.contrastText"
@@ -110,7 +112,7 @@ export const ReachOutSection = () => (
       >
         hi.marchenko@gmail.com
       </Typography>
-      <Typography variant="h1" fontWeight="500">
+      <Typography variant="h1" component="h2" fontWeight="500">
         Let’s build something great together
       </Typography>
     </Stack>
@@ -179,6 +181,7 @@ export const AboutWorkSection = () => {
       <Stack gap={3}>
         <Typography
           variant="subtitle1"
+          component="h2"
           textTransform="uppercase"
           color="text.secondary"
           sx={{ pl: { md: 6 } }}
@@ -238,6 +241,7 @@ export const AboutWorkSection = () => {
       <Stack gap={3}>
         <Typography
           variant="subtitle1"
+          component="h2"
           textTransform="uppercase"
           color="text.secondary"
           sx={{ pl: { md: 6 } }}
@@ -251,6 +255,7 @@ export const AboutWorkSection = () => {
           >
             <Typography
               variant="h4"
+              component="p"
               width={64}
               flexShrink={0}
               color="primary.contrastText"
@@ -296,6 +301,7 @@ export const AboutWorkSection = () => {
               >
                 <Typography
                   variant="h4"
+                  component="p"
                   width={64}
                   flexShrink={0}
                   color="primary.contrastText"

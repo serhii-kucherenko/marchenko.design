@@ -21,7 +21,7 @@ export const CVCircle: React.FC<IProps> = ({
   const theme = useTheme();
 
   return (
-    <Link href="/cv">
+    <Link href="/cv" aria-label="View CV">
       <AnimatedCircleButton
         hoverColor={theme.palette.primary.dark}
         mobileImage={CircleIconMobile}

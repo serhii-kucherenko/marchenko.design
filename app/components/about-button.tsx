@@ -18,7 +18,7 @@ export const AboutButton: React.FC<IProps> = ({
   const { mobileSX, desktopSX } = getCircleButtonSX(position);
 
   return (
-    <Link href="/">
+    <Link href="/" aria-label="View About page">
       <AnimatedCircleButton
         hoverColor="#A726181A"
         mobileImage={AboutIconMobile}

@@ -89,6 +89,7 @@ export default function Home() {
             <Typography variant="body1">
               <Link
                 href="mailto:hi.marchenko@gmail.com"
+                className="accessible-inline-link"
               >
                 <strong>Shoot me an email</strong>
               </Link>{" "}

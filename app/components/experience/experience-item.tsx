@@ -45,10 +45,10 @@ export const ExperienceItem: React.FC<ExperienceProps> = ({
 }) => {
   return (
     <Box>
-      <Typography variant="h4" fontWeight={600} pb={0.25}>
+      <Typography variant="h4" component="h3" fontWeight={600} pb={0.25}>
         {title}
       </Typography>
-      <Typography variant="h5" color="primary.contrastText" pb={2}>
+      <Typography variant="h5" component="p" color="primary.contrastText" pb={2}>
         {date}
       </Typography>
       {description && (

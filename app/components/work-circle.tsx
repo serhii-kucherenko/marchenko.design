@@ -21,7 +21,7 @@ export const WorkCircle: React.FC<IProps> = ({
   const { mobileSX, desktopSX } = getCircleButtonSX(position);
 
   return (
-    <Link href={href}>
+    <Link href={href} aria-label="View work">
       <AnimatedCircleButton
         hoverColor="#A726181A"
         desktopImage={WorkIcon}

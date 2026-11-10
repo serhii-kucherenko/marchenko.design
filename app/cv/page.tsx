@@ -39,6 +39,7 @@ export default function Home() {
         >
           <Typography
             variant="h4"
+            component="div"
             fontSize="16px"
             fontWeight="500"
             sx={{
@@ -59,6 +60,7 @@ export default function Home() {
               component={Link}
               href="https://www.linkedin.com/in/anastasiia-marchenko/"
               target="_blank"
+              className="accessible-inline-link"
               fontWeight="400"
               fontSize="16px"
             >
@@ -67,6 +69,7 @@ export default function Home() {
           </Typography>
           <Typography
             variant="h4"
+            component="div"
             fontSize="16px"
             fontWeight="500"
             sx={{
@@ -86,6 +89,7 @@ export default function Home() {
               variant="h4"
               component={Link}
               href="mailto:hi.marchenko@gmail.com"
+              className="accessible-inline-link"
               fontSize="16px"
               fontWeight="400"
             >
@@ -94,6 +98,7 @@ export default function Home() {
           </Typography>
           <Typography
             variant="h4"
+            component="div"
             fontSize="16px"
             fontWeight="500"
             sx={{
@@ -114,6 +119,7 @@ export default function Home() {
               component={Link}
               href="https://dribbble.com/A_March"
               target="_blank"
+              className="accessible-inline-link"
               fontSize="16px"
               fontWeight="400"
             >
@@ -122,6 +128,7 @@ export default function Home() {
           </Typography>
           <Typography
             variant="h4"
+            component="div"
             fontSize="16px"
             fontWeight="500"
             sx={{
@@ -142,6 +149,7 @@ export default function Home() {
               component={Link}
               href="https://www.figma.com/@anamarchenko"
               target="_blank"
+              className="accessible-inline-link"
               fontSize="16px"
               fontWeight="400"
             >
