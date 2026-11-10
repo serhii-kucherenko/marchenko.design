@@ -41,6 +41,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "MzcvKBG3HLvrTZEd66z6C9HdYwuWYLpTzvF_U7csgOg",
+  },
   twitter: {
     title: "Anastasiia Marchenko | Product Designer",
     card: "summary_large_image",
