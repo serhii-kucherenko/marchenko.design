@@ -251,14 +251,13 @@ export const AboutWorkSection = () => {
         <Box borderTop={1} borderColor="divider">
           <Box
             className="flex items-center gap-4 border-b border-solid border-[#e5e7eb] px-6 py-6"
-            sx={{ opacity: 0.45 }}
           >
             <Typography
               variant="h4"
               component="p"
               width={64}
               flexShrink={0}
-              color="primary.contrastText"
+              color="#746F6F"
               fontWeight="500"
             >
               2024
@@ -267,18 +266,23 @@ export const AboutWorkSection = () => {
               variant="h3"
               flex={1}
               fontWeight="600"
-              sx={{ fontSize: { xs: 20, md: 22 }, lineHeight: { xs: 1.2, md: 40 / 22 } }}
+              sx={{
+                color: "#746F6F",
+                fontSize: { xs: 20, md: 22 },
+                lineHeight: { xs: 1.2, md: 40 / 22 },
+              }}
             >
               Gameofgo — Coming soon
             </Typography>
             <Typography
               variant="body1"
+              color="#746F6F"
               fontWeight="300"
               className="hidden sm:block"
             >
               Principal Designer
             </Typography>
-            <ArrowUpRight size={32} strokeWidth={1} color="rgba(2, 4, 5, 0.35)" />
+            <ArrowUpRight size={32} strokeWidth={1} color="#5F5A5A" />
           </Box>
           {earlierProjects.map((project, index) => (
             <Link
