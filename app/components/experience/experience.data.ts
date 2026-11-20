@@ -7,7 +7,7 @@ interface Experience {
 
 export const experience: Experience[] = [
   {
-    title: "Senior Product Designer at Eventbase",
+    title: "Principal Product Designer at Eventbase",
     date: "June 2026 - Present",
     description:
       "Leading design for a major platform relaunch across enterprise event management tools and attendee apps, partnering with product and engineering to shape the experience and release priorities.",
