@@ -93,8 +93,7 @@ export default function Home() {
               >
                 <strong>Shoot me an email</strong>
               </Link>{" "}
-              I&apos;m happy to discuss how I can contribute to your team&apos;s
-              success.
+              I&apos;d love to discuss how I can help your team succeed.
             </Typography>
           </Stack>
         </Box>

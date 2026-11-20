@@ -38,7 +38,7 @@ const recentProjects = PROJECTS_DATA.slice(0, 2).map((project) => {
     return {
       ...project,
       description:
-        "Led design of a white-label companion app for Forum Spaces, helping initiative members stay connected and take part in their communities on the go.",
+        "Led design of a white-label companion app for Forum Spaces, helping initiative members stay connected on the go.",
     };
   }
 
